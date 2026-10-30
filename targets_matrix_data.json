@@ -32,7 +32,7 @@
     "kpi": "KPI-06",
     "sector": "State Commercial Banking",
     "threat": "CRITICAL",
-    "logo": "assets/logos/Agrani_Bank_Limited_PNG.jpeg",
+    "logo": "assets/logos/agrani_bank_official_square.png",
     "abbr": "AGR",
     "color": "#0284c7",
     "evidence": [
@@ -87,7 +87,7 @@
     "kpi": "KPI-43",
     "sector": "National Defense",
     "threat": "CRITICAL",
-    "logo": "assets/logos/Bangladesh_Navy.png",
+    "logo": "assets/logos/bangladesh_navy_square.png",
     "abbr": "BN",
     "color": "#0369a1",
     "evidence": [
@@ -332,7 +332,7 @@
     "kpi": "Non-KPI",
     "sector": "ISP & Telecommunications Gateway",
     "threat": "LOW",
-    "logo": "assets/logos/custom/tdotnet.png",
+    "logo": "assets/logos/tdotnet_official_square.png",
     "abbr": "TDN",
     "color": "#2563eb",
     "evidence": [
@@ -500,7 +500,7 @@
     "kpi": "Non-KPI",
     "sector": "Strategic Government IT Vendor (Supply Chain)",
     "threat": "HIGH",
-    "logo": "assets/logos/custom/flora_limited.png",
+    "logo": "assets/logos/flora_limited_official_square.png",
     "abbr": "FLR",
     "color": "#0284c7",
     "evidence": [
@@ -529,7 +529,7 @@
     "kpi": "Access Broker",
     "sector": "Network Access Broker Auction",
     "threat": "LOW",
-    "logo": "assets/logos/custom/classified_broker.png",
+    "logo": "assets/logos/classified_broker_square.png",
     "abbr": "SEC",
     "color": "#64748b",
     "evidence": [

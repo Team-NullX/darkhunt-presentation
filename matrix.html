@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Master Threat Intelligence Matrix — Project Dark Hunt Presentation</title>
+  <title>Leaked Data Taxonomy & Categories — Project Dark Hunt Presentation</title>
   <link rel="stylesheet" href="presentation.css">
   <link rel="icon" type="image/png" href="tnx-logo.png">
 </head>
@@ -21,11 +21,10 @@
       </a>
 
       <div class="nav-links">
-        <a href="presentation.html" class="nav-link">Page 1: Target Logos</a>
-        <a href="matrix.html" class="nav-link active">Page 2: Threat Matrix</a>
-        <a href="defense.html" class="nav-link">Page 3: Defense Blueprint</a>
+        <a href="presentation.html" class="nav-link">Page 1: Target Sites (20)</a>
+        <a href="categories.html" class="nav-link active">Page 2: Data Categories</a>
+        <a href="vectors.html" class="nav-link">Page 3: Attack Vectors & Misuse</a>
         <a href="Master_Cyber_Threat_Matrix_English.pdf" target="_blank" class="nav-link nav-pill-pdf">PDF Dossier 📥</a>
-        <a href="index.html" class="nav-link" style="border: 1px solid var(--border-color);">Classic App ↗</a>
         <button id="themeToggle" class="theme-toggle-btn" title="Toggle Light / Dark mode">☀️ Theme</button>
       </div>
     </div>
@@ -37,39 +36,264 @@
     <!-- Hero / Header -->
     <header class="page-hero">
       <div class="hero-tag">Executive Presentation // Page 2 of 3</div>
-      <h2 class="hero-title">Master Cyber Threat Intelligence Matrix (English Overview)</h2>
+      <h2 class="hero-title">Taxonomy of Leaked Data Categories & Sensitivity Ledger</h2>
       <p class="hero-desc">
-        Comprehensive field-by-field audit detailing compromised data records, double-sided real-world consequences (citizen vs. institutional impact), and technical adversary attack vectors mapped across all 20 verified target entities.
+        Comprehensive classification of all compromised intelligence types recovered from dark web Tor .onion repositories, ransomware leak portals, and cybercriminal marketplaces across the 20 targeted Bangladeshi institutions.
       </p>
 
       <div class="stat-pills">
-        <div class="stat-pill"><strong>Category 1</strong> Dual-Proof Ledger</div>
-        <div class="stat-pill"><strong>Field-by-Field</strong> Impact Taxonomy</div>
-        <div class="stat-pill"><strong>Technical</strong> Attack Vector Mapping</div>
-        <div class="stat-pill"><strong>8 Primary</strong> Vector Groups</div>
+        <div class="stat-pill"><strong>8</strong> Intelligence Categories</div>
+        <div class="stat-pill"><strong>120M+</strong> Citizen Identity Profiles</div>
+        <div class="stat-pill"><strong>410 GB</strong> Enterprise Retail Dumps</div>
+        <div class="stat-pill"><strong>3</strong> Tier-1 Defense & LE Agencies</div>
+        <div class="stat-pill" style="border-color: #ef4444; color: #fca5a5;"><strong>Top Secret</strong> Sovereign Data</div>
       </div>
     </header>
 
-    <!-- Table Container -->
-    <div class="matrix-container">
-      <div class="table-responsive">
-        <table class="matrix-table" id="masterMatrixTable">
-          <thead>
-            <tr>
-              <th style="width: 4%;">#</th>
-              <th style="width: 18%;">Target Organization</th>
-              <th style="width: 18%;">Proof & Onion Origin</th>
-              <th style="width: 20%;">Leaked Data Types</th>
-              <th style="width: 20%;">Target & Citizen Impact</th>
-              <th style="width: 20%;">Threatened Attack Vectors</th>
-            </tr>
-          </thead>
-          <tbody id="matrixTableBody">
-            <!-- Injected dynamically via presentation.js -->
-          </tbody>
-        </table>
+    <!-- Category Cards Section -->
+    <section>
+      <div class="section-title-bar">
+        <h3>Classified Data Breakdown by Intelligence Type</h3>
+        <p>Explore the specific datasets, records, and files exfiltrated from verified targets.</p>
       </div>
-    </div>
+
+      <div class="categories-grid">
+
+        <!-- Category 1: Civil Identity -->
+        <article class="category-card">
+          <div class="category-card-header">
+            <div class="category-icon" style="color: #38bdf8;">🪪</div>
+            <div class="category-title">
+              <h3>National Civil Identity & Voter Registry</h3>
+              <p>Sovereign Citizen Demographic & Biometric Records</p>
+            </div>
+          </div>
+          <span class="badge badge-critical" style="align-self: flex-start; margin-bottom: 0.5rem;">CRITICAL SEVERITY</span>
+          <div class="category-targets-list">
+            <span class="target-pill-small"><img src="assets/logos/BD-NID.png" alt="NID"> ECS / NID Wing (#16)</span>
+            <span class="target-pill-small"><img src="assets/logos/bangladesh_police_official.png" alt="Police"> Police HQ (#03)</span>
+          </div>
+          <ul class="category-points">
+            <li><strong>Full Citizen Demographics:</strong> Voter names, father/mother names, permanent & present addresses, dates of birth.</li>
+            <li><strong>Sovereign Identifiers:</strong> National ID (NID) 10/17-digit numbers, voter area codes, and digital application tokens.</li>
+            <li><strong>Biometric Metadata:</strong> Fingerprint scan reference hashes and national identity card photos.</li>
+          </ul>
+          <div class="category-footer">
+            <span style="color: var(--text-dim);">Estimated Exposure: <strong>120M+ Citizens</strong></span>
+            <span style="color: var(--threat-crit-text);">Permanent Exposure</span>
+          </div>
+        </article>
+
+        <!-- Category 2: Law Enforcement -->
+        <article class="category-card">
+          <div class="category-card-header">
+            <div class="category-icon" style="color: #ef4444;">🚔</div>
+            <div class="category-title">
+              <h3>Law Enforcement & Criminal Investigative Dossiers</h3>
+              <p>Police Intelligence, Case Evidence & Informant Files</p>
+            </div>
+          </div>
+          <span class="badge badge-critical" style="align-self: flex-start; margin-bottom: 0.5rem;">CRITICAL SEVERITY</span>
+          <div class="category-targets-list">
+            <span class="target-pill-small"><img src="assets/logos/bangladesh_police_official.png" alt="Police"> Bangladesh Police HQ / CID (#03)</span>
+          </div>
+          <ul class="category-points">
+            <li><strong>Investigative Dockets:</strong> Confidential First Information Reports (FIRs), sensitive case progress sheets, crime scene photos.</li>
+            <li><strong>Forensic Examinations:</strong> Ballistic forensic exam reports, DNA lab manifests, autopsy documentation.</li>
+            <li><strong>Human Intelligence:</strong> Registered informant contact indices, surveillance logs, and phone wiretap interception transcripts.</li>
+          </ul>
+          <div class="category-footer">
+            <span style="color: var(--text-dim);">Evidence IDs: <strong>EVD-005, EVD-006</strong></span>
+            <span style="color: var(--threat-crit-text);">Public Threat: High</span>
+          </div>
+        </article>
+
+        <!-- Category 3: Defense & Maritime -->
+        <article class="category-card">
+          <div class="category-card-header">
+            <div class="category-icon" style="color: #6366f1;">⚓</div>
+            <div class="category-title">
+              <h3>National Defense & Maritime Operational Intelligence</h3>
+              <p>Military Personnel, Naval Logistics & Warship Readiness</p>
+            </div>
+          </div>
+          <span class="badge badge-critical" style="align-self: flex-start; margin-bottom: 0.5rem;">CRITICAL SEVERITY</span>
+          <div class="category-targets-list">
+            <span class="target-pill-small"><img src="assets/logos/bangladesh_navy_square.png" alt="Navy"> Bangladesh Navy (#04)</span>
+            <span class="target-pill-small"><img src="assets/logos/Bangladesh_Armed_Forces.png" alt="AFD"> Armed Forces Division (#17)</span>
+          </div>
+          <ul class="category-points">
+            <li><strong>Warship Operations:</strong> Patrol vessel maintenance schedules, shipyard dockyard procurement logs, maritime patrol routes.</li>
+            <li><strong>Military Personnel:</strong> Officer postings, contact directories, internal circulars, and service records.</li>
+            <li><strong>Tactical Communications:</strong> Naval radio frequency planning, procurement tenders, and coastal radar network notes.</li>
+          </ul>
+          <div class="category-footer">
+            <span style="color: var(--text-dim);">Evidence IDs: <strong>EVD-007, EVD-033</strong></span>
+            <span style="color: var(--threat-crit-text);">State Security Impact</span>
+          </div>
+        </article>
+
+        <!-- Category 4: Financial & Banking -->
+        <article class="category-card">
+          <div class="category-card-header">
+            <div class="category-icon" style="color: #f59e0b;">💳</div>
+            <div class="category-title">
+              <h3>Financial Portfolios, Credit Audits & Core Banking</h3>
+              <p>Corporate Loans, Board Memos & Risk Assessments</p>
+            </div>
+          </div>
+          <span class="badge badge-high" style="align-self: flex-start; margin-bottom: 0.5rem;">HIGH SEVERITY</span>
+          <div class="category-targets-list">
+            <span class="target-pill-small"><img src="assets/logos/agrani_bank_official_square.png" alt="Agrani"> Agrani Bank (#02)</span>
+            <span class="target-pill-small"><img src="assets/logos/the_city_bank_official_square.png" alt="City Bank"> The City Bank (#06)</span>
+            <span class="target-pill-small"><img src="assets/logos/bank_asia_official_square.png" alt="Bank Asia"> Bank Asia (#07)</span>
+          </div>
+          <ul class="category-points">
+            <li><strong>Credit Risk Audits:</strong> Comprehensive risk ratings for major commercial borrowers, non-performing loan (NPL) recovery logs.</li>
+            <li><strong>Executive Management Memos:</strong> Board resolution records, strategic acquisition sheets, inter-branch balance sheets.</li>
+            <li><strong>Commercial Client Data:</strong> Letter of Credit (LC) terms, foreign trade financing files, and corporate guarantee documents.</li>
+          </ul>
+          <div class="category-footer">
+            <span style="color: var(--text-dim);">Evidence IDs: <strong>EVD-003, EVD-011, EVD-013</strong></span>
+            <span style="color: var(--threat-high-text);">Financial Risk</span>
+          </div>
+        </article>
+
+        <!-- Category 5: Aviation & Transport -->
+        <article class="category-card">
+          <div class="category-card-header">
+            <div class="category-icon" style="color: #06b6d4;">✈️</div>
+            <div class="category-title">
+              <h3>Commercial Aviation & Passenger Manifests</h3>
+              <p>International PNRs, Passport Scans & Flight Rosters</p>
+            </div>
+          </div>
+          <span class="badge badge-high" style="align-self: flex-start; margin-bottom: 0.5rem;">HIGH SEVERITY</span>
+          <div class="category-targets-list">
+            <span class="target-pill-small"><img src="assets/logos/biman-bangladesh.png" alt="Biman"> Biman Airlines (#01)</span>
+            <span class="target-pill-small"><img src="assets/logos/novoair_official_square.png" alt="NovoAir"> NovoAir (#11)</span>
+            <span class="target-pill-small"><img src="assets/logos/malindo_official_square.png" alt="Malindo"> Malindo Air (#14)</span>
+          </div>
+          <ul class="category-points">
+            <li><strong>Passenger Name Records (PNR):</strong> Travel itineraries, seat assignments, frequent flyer membership profiles.</li>
+            <li><strong>Border Verification Data:</strong> Passenger passport numbers, nationality, issuance country, and payment card details.</li>
+            <li><strong>Operational Rosters:</strong> Pilot and flight attendant schedules, aircraft tail assignments, and internal ground maintenance logs.</li>
+          </ul>
+          <div class="category-footer">
+            <span style="color: var(--text-dim);">Evidence IDs: <strong>EVD-001, EVD-021, EVD-027</strong></span>
+            <span style="color: var(--threat-high-text);">Cross-Border Risk</span>
+          </div>
+        </article>
+
+        <!-- Category 6: Retail & ERP -->
+        <article class="category-card">
+          <div class="category-card-header">
+            <div class="category-icon" style="color: #ec4899;">🛒</div>
+            <div class="category-title">
+              <h3>Mass Consumer Retail & Commercial ERP Databases</h3>
+              <p>Customer Order Histories, Phone Lists & Supply Chains</p>
+            </div>
+          </div>
+          <span class="badge badge-high" style="align-self: flex-start; margin-bottom: 0.5rem;">HIGH SEVERITY</span>
+          <div class="category-targets-list">
+            <span class="target-pill-small"><img src="assets/logos/shwapno_official_square.png" alt="Shwapno"> Shwapno (ACI) (#10)</span>
+            <span class="target-pill-small"><img src="assets/logos/rabbit_bd_official_square.png" alt="RabbitBD"> RabbitBD (#09)</span>
+            <span class="target-pill-small"><img src="assets/logos/bd_group_official_square.png" alt="BD Group"> BD Group (#08)</span>
+          </div>
+          <ul class="category-points">
+            <li><strong>Massive Consumer Dumps:</strong> 410 GB uncompressed PostgreSQL / MongoDB database tables from national retail leader Shwapno.</li>
+            <li><strong>Direct Customer Profiles:</strong> Mobile phone numbers, residential delivery street addresses, e-commerce order logs.</li>
+            <li><strong>ERP Invoicing:</strong> Corporate supplier invoicing schedules, wholesale distribution agreements, and inventory pricing spreadsheets.</li>
+          </ul>
+          <div class="category-footer">
+            <span style="color: var(--text-dim);">Volume: <strong>410 GB + Hundreds of thousands of buyers</strong></span>
+            <span style="color: var(--threat-high-text);">Mass Exploitation</span>
+          </div>
+        </article>
+
+        <!-- Category 7: Healthcare Diagnostic -->
+        <article class="category-card">
+          <div class="category-card-header">
+            <div class="category-icon" style="color: #10b981;">🏥</div>
+            <div class="category-title">
+              <h3>Clinical Diagnostic Records & Medical History</h3>
+              <p>Patient Pathology Reports & Insurance Beneficiaries</p>
+            </div>
+          </div>
+          <span class="badge badge-low" style="align-self: flex-start; margin-bottom: 0.5rem;">SENSITIVE SEVERITY</span>
+          <div class="category-targets-list">
+            <span class="target-pill-small"><img src="assets/logos/ibn_sina_official_square.png" alt="Ibn Sina"> IBN SINA Trust (#12)</span>
+            <span class="target-pill-small"><img src="assets/logos/popular_life_official_square.png" alt="Popular Life"> Popular Life (#05)</span>
+          </div>
+          <ul class="category-points">
+            <li><strong>Clinical Pathology Reports:</strong> Patient bloodwork analysis, biopsy laboratory sheets, radiologic imaging summaries.</li>
+            <li><strong>Doctor Prescriptions:</strong> Specialized disease treatment histories, psychiatric medications, and consultation notes.</li>
+            <li><strong>Insurance Underwriting:</strong> Life insurance medical declarations, nominee national ID cards, and claim payout files.</li>
+          </ul>
+          <div class="category-footer">
+            <span style="color: var(--text-dim);">Evidence IDs: <strong>EVD-009, EVD-023</strong></span>
+            <span style="color: #34d399;">PHI Privacy Breach</span>
+          </div>
+        </article>
+
+        <!-- Category 8: Telecom & IT Supply Chain -->
+        <article class="category-card">
+          <div class="category-card-header">
+            <div class="category-icon" style="color: #a855f7;">🌐</div>
+            <div class="category-title">
+              <h3>Strategic Telecom Gateways & SCADA Infrastructure</h3>
+              <p>Edge BGP Routers, Government IT Vendors & Power Plants</p>
+            </div>
+          </div>
+          <span class="badge badge-critical" style="align-self: flex-start; margin-bottom: 0.5rem;">CRITICAL SEVERITY</span>
+          <div class="category-targets-list">
+            <span class="target-pill-small"><img src="assets/logos/tdotnet_official_square.png" alt="tdotnet"> tdotnet (#13)</span>
+            <span class="target-pill-small"><img src="assets/logos/confidence_official_square.png" alt="Confidence"> Confidence Group (#18)</span>
+            <span class="target-pill-small"><img src="assets/logos/flora_limited_official_square.png" alt="Flora"> Flora Limited (#19)</span>
+            <span class="target-pill-small"><img src="assets/logos/classified_broker_square.png" alt="Broker"> Classified Broker (#20)</span>
+          </div>
+          <ul class="category-points">
+            <li><strong>Core Routing Blueprints:</strong> Cisco/Juniper/MikroTik BGP routing tables, gateway peering credentials (~280 MB).</li>
+            <li><strong>Power Plant Distribution:</strong> Substation SCADA diagrams, private power generator monitoring architecture.</li>
+            <li><strong>Government IT Supply Chain:</strong> Flora Limited internal developer credentials, access tokens for strategic government IT projects.</li>
+          </ul>
+          <div class="category-footer">
+            <span style="color: var(--text-dim);">Evidence IDs: <strong>EVD-025, EVD-035, EVD-037</strong></span>
+            <span style="color: var(--threat-crit-text);">Infrastructure Risk</span>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- Cross-Entity Matrix Table Section -->
+    <section style="margin-top: 3rem;">
+      <div class="section-title-bar">
+        <h3>Master Target-by-Target Verification Table</h3>
+        <p>Full dual-proof evidence and onion origin ledger for all 20 compromised sites.</p>
+      </div>
+
+      <!-- Table Container -->
+      <div class="matrix-container">
+        <div class="table-responsive">
+          <table class="matrix-table" id="masterMatrixTable">
+            <thead>
+              <tr>
+                <th style="width: 4%;">#</th>
+                <th style="width: 18%;">Target Organization</th>
+                <th style="width: 18%;">Proof & Onion Origin</th>
+                <th style="width: 20%;">Leaked Data Types</th>
+                <th style="width: 20%;">Target & Citizen Impact</th>
+                <th style="width: 20%;">Threatened Attack Vectors</th>
+              </tr>
+            </thead>
+            <tbody id="matrixTableBody">
+              <!-- Injected dynamically via presentation.js -->
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
 
   </main>
 
