@@ -1,6 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <script>
+    (function () {
+      var saved = localStorage.getItem('pdh-theme');
+      var theme = saved === 'light' || saved === 'dark'
+        ? saved
+        : (matchMedia('(prefers-color-scheme: light)').matches ? 'light' : 'dark');
+      document.documentElement.setAttribute('data-theme', theme);
+    })();
+  </script>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Slide 1: Compromised Target Sites (20) — Project Dark Hunt</title>
@@ -9,23 +18,26 @@
 </head>
 <body style="overflow-x: hidden;">
 
-  <!-- Minimal Top Header -->
-  <nav class="navbar" style="padding: 0.4rem 0;">
-    <div class="container nav-container" style="max-width: 1400px;">
-      <a href="presentation.html" class="brand">
-        <span class="brand-badge">RESTRICTED CTI</span>
-        <div class="brand-text">
-          <h1 style="font-size: 1.05rem;">Project Dark Hunt</h1>
-          <p style="font-size: 0.7rem;">Cyber Threat Intelligence Presentation // Team NullX</p>
+  <!-- Authentic App Nav (Identical to http://localhost:8080/) -->
+  <nav class="app-nav" aria-label="Main Navigation">
+    <div class="nav-container">
+      <div class="nav-side">
+        <a href="presentation.html" style="display: flex; align-items: center; text-decoration: none;">
+          <img class="nav-logo" src="tnx-logo.png" alt="Team NullX" width="50" height="50">
+        </a>
+        <div class="nav-links">
+          <a href="presentation.html" class="nav-btn active">Slide 1: Targets (20 Logos)</a>
+          <a href="categories.html" class="nav-btn">Slide 2: Data Types</a>
+          <a href="vectors.html" class="nav-btn">Slide 3: Attack Vectors</a>
+          <a href="Master_Cyber_Threat_Matrix_English.pdf" target="_blank" class="nav-btn" style="border: 1px solid var(--forest);">PDF Dossier 📥</a>
         </div>
-      </a>
-
-      <div class="nav-links">
-        <a href="presentation.html" class="nav-link active">Slide 1: Targets (20 Logos)</a>
-        <a href="categories.html" class="nav-link">Slide 2: Data Types</a>
-        <a href="vectors.html" class="nav-link">Slide 3: Attack Vectors</a>
-        <a href="Master_Cyber_Threat_Matrix_English.pdf" target="_blank" class="nav-link nav-pill-pdf" style="padding: 3px 10px; font-size: 0.75rem;">PDF Dossier 📥</a>
-        <button id="themeToggle" class="theme-toggle-btn" style="padding: 3px 8px; font-size: 0.75rem;">☀️ Theme</button>
+      </div>
+      <div class="nav-brand">
+        <div class="nav-brand-text">
+          <h1 class="header-title">Dark Hunt</h1>
+          <p class="header-subtitle">Team NullX // Cyber Threat Intelligence Presentation</p>
+        </div>
+        <button type="button" class="theme-toggle" id="themeToggle" aria-pressed="false">☀️ Theme</button>
       </div>
     </div>
   </nav>
