@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Master Threat Intelligence Matrix — Project Dark Hunt Presentation</title>
+  <link rel="stylesheet" href="presentation.css">
+  <link rel="icon" type="image/png" href="tnx-logo.png">
+</head>
+<body>
+
+  <!-- Top Navigation Bar -->
+  <nav class="navbar">
+    <div class="container nav-container">
+      <a href="presentation.html" class="brand">
+        <span class="brand-badge">RESTRICTED</span>
+        <div class="brand-text">
+          <h1>Project Dark Hunt</h1>
+          <p>Cyber Threat Intelligence Presentation // Team NullX</p>
+        </div>
+      </a>
+
+      <div class="nav-links">
+        <a href="presentation.html" class="nav-link">Page 1: Target Logos</a>
+        <a href="matrix.html" class="nav-link active">Page 2: Threat Matrix</a>
+        <a href="defense.html" class="nav-link">Page 3: Defense Blueprint</a>
+        <a href="Master_Cyber_Threat_Matrix_English.pdf" target="_blank" class="nav-link nav-pill-pdf">PDF Dossier 📥</a>
+        <a href="index.html" class="nav-link" style="border: 1px solid var(--border-color);">Classic App ↗</a>
+        <button id="themeToggle" class="theme-toggle-btn" title="Toggle Light / Dark mode">☀️ Theme</button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Main Body Content -->
+  <main class="container" style="flex: 1;">
+    
+    <!-- Hero / Header -->
+    <header class="page-hero">
+      <div class="hero-tag">Executive Presentation // Page 2 of 3</div>
+      <h2 class="hero-title">Master Cyber Threat Intelligence Matrix (English Overview)</h2>
+      <p class="hero-desc">
+        Comprehensive field-by-field audit detailing compromised data records, double-sided real-world consequences (citizen vs. institutional impact), and technical adversary attack vectors mapped across all 20 verified target entities.
+      </p>
+
+      <div class="stat-pills">
+        <div class="stat-pill"><strong>Category 1</strong> Dual-Proof Ledger</div>
+        <div class="stat-pill"><strong>Field-by-Field</strong> Impact Taxonomy</div>
+        <div class="stat-pill"><strong>Technical</strong> Attack Vector Mapping</div>
+        <div class="stat-pill"><strong>8 Primary</strong> Vector Groups</div>
+      </div>
+    </header>
+
+    <!-- Table Container -->
+    <div class="matrix-container">
+      <div class="table-responsive">
+        <table class="matrix-table" id="masterMatrixTable">
+          <thead>
+            <tr>
+              <th style="width: 4%;">#</th>
+              <th style="width: 18%;">Target Organization</th>
+              <th style="width: 18%;">Proof & Onion Origin</th>
+              <th style="width: 20%;">Leaked Data Types</th>
+              <th style="width: 20%;">Target & Citizen Impact</th>
+              <th style="width: 20%;">Threatened Attack Vectors</th>
+            </tr>
+          </thead>
+          <tbody id="matrixTableBody">
+            <!-- Injected dynamically via presentation.js -->
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="app-footer">
+    <div class="container footer-content">
+      <div>
+        <strong style="color: var(--text-main); font-size: 0.9rem;">Project Dark Hunt</strong>
+        <p>A non-speculative empirical Cyber Threat Intelligence inquiry by Team NullX.</p>
+        <div class="team-members">
+          <div class="team-member-item">
+            <span class="team-member-role">Project Lead & Planning</span>
+            <span class="team-member-name">Rahat Sahriar Rafi</span>
+          </div>
+          <div class="team-member-item">
+            <span class="team-member-role">Website Development & Evidence</span>
+            <span class="team-member-name">Md. Tanjim Islam</span>
+          </div>
+          <div class="team-member-item">
+            <span class="team-member-role">Evidence Verification</span>
+            <span class="team-member-name">MD Rakib Hasan Apon</span>
+          </div>
+        </div>
+      </div>
+      <div style="text-align: right;">
+        <span class="badge badge-critical" style="margin-bottom: 0.5rem;">RESTRICTED CTI ARCHIVE</span>
+        <p>Classification: Lawful Passive OSINT // Redacted Citizen PII</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="presentation.js"></script>
+</body>
+</html>

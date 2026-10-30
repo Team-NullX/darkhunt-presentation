@@ -1,0 +1,552 @@
+[
+  {
+    "id": 1,
+    "name": "Biman Bangladesh Airlines",
+    "kpi": "KPI-10",
+    "sector": "Aviation & Transport",
+    "threat": "CRITICAL",
+    "logo": "biman-bangladesh.png",
+    "abbr": "BG",
+    "color": "#047857",
+    "evidence": [
+      "EVD-013"
+    ],
+    "onion": "http://blogvl7tjyjvsfthobttze52w36wwiz34hrfcmorgvdzb6hikucb7aqd.onion/news.php?id=30",
+    "leaked_data": [
+      "Passenger passport scans & PNR travel records (~100 GB)",
+      "Pilot & cabin crew personnel service dossiers",
+      "Exchange mail server corporate emails & executive messages",
+      "Flight operations, routing schedules & maintenance logs"
+    ],
+    "impact_citizen": "International identity theft, physical tracking of VIPs, diplomats, and citizens on global flight routes, fake travel document creation.",
+    "impact_institutional": "Grounding of flight operations systems, international GDPR aviation compliance penalties, reputational damage.",
+    "attack_vectors": [
+      "Business Email Compromise (BEC) hijacking vendor wire transfer accounts",
+      "Passenger phishing campaigns for credit card skimming",
+      "Unpatched edge VPN / Remote Desktop (RDP) gateway penetration"
+    ]
+  },
+  {
+    "id": 2,
+    "name": "Agrani Bank PLC",
+    "kpi": "KPI-06",
+    "sector": "State Commercial Banking",
+    "threat": "CRITICAL",
+    "logo": "Agrani_Bank_Limited_PNG.jpeg",
+    "abbr": "AGR",
+    "color": "#0284c7",
+    "evidence": [
+      "EVD-001"
+    ],
+    "onion": "http://ks5424y3wpr5zlug5c7i6svvxweinhbdcqcfnptkfcutrncfazzgz5id.onion/",
+    "leaked_data": [
+      "12,000+ confidential corporate and institutional files",
+      "Core banking drive backups & branch financial balance ledgers",
+      "Large corporate borrower loan dossiers & collateral pledges",
+      "Internal financial audit reports & liquidity assessments"
+    ],
+    "impact_citizen": "Borrower private asset exposure, targeted corporate blackmail and extortion of commercial business owners.",
+    "impact_institutional": "Systemic liquidity run risk, bank run panic, regulatory sanctions, and disclosure of non-performing loan collateral irregularities.",
+    "attack_vectors": [
+      "Double-extortion ransomware auctioning loan directories on dark forums",
+      "Payment voucher spoofing injecting fraudulent RTGS/SWIFT transfers",
+      "Internal network credential spraying against core banking servers"
+    ]
+  },
+  {
+    "id": 3,
+    "name": "Bangladesh Police (HQ/CID)",
+    "kpi": "KPI-41",
+    "sector": "Law Enforcement",
+    "threat": "CRITICAL",
+    "logo": "Presidential_Emblem_of_Bangladesh.png",
+    "abbr": "BP",
+    "color": "#1e3a8a",
+    "evidence": [
+      "EVD-006",
+      "EVD-007"
+    ],
+    "onion": "dkgn45pinr7nwvdaehemcrpgcjqf4fooit3c4gjw6dhzrp443ctvnoad.onion",
+    "leaked_data": [
+      "100,000+ police personnel master service records",
+      "BP numbers, police ranks, and station posting locations",
+      "Personal mobile numbers, National IDs & home addresses",
+      "Internal departmental deployment schedules & duty rosters"
+    ],
+    "impact_citizen": "Severe danger to undercover field operatives, confidential criminal informants, and harassment of police officer families.",
+    "impact_institutional": "Complete operational layout and force distribution exposed to organized crime cartels; loss of judicial evidence integrity.",
+    "attack_vectors": [
+      "Targeted spear-phishing deploying malware disguised as official transfer orders",
+      "Identity impersonation using authentic officer names to issue fake directives",
+      "Credential spraying on police webmail portals and mobile dispatch networks"
+    ]
+  },
+  {
+    "id": 4,
+    "name": "Bangladesh Navy",
+    "kpi": "KPI-43",
+    "sector": "National Defense",
+    "threat": "CRITICAL",
+    "logo": "Bangladesh_Navy.png",
+    "abbr": "BN",
+    "color": "#0369a1",
+    "evidence": [
+      "EVD-008",
+      "EVD-009",
+      "EVD-034"
+    ],
+    "onion": "http://funkxxkovrk7ctnggbjnthdajav4ggex53k6m2x3esjwlxrkb3qiztid.onion/",
+    "leaked_data": [
+      "~200 GB confidential naval files & administrative records",
+      "Officer service records, posting orders & medical clearance profiles",
+      "Dockyard engineering logistics circulars & maintenance memos",
+      "Internal naval base administrative directives and circulars"
+    ],
+    "impact_citizen": "Vulnerability for defense contractors, civilian engineers, and naval officer families.",
+    "impact_institutional": "Severe military OPSEC compromise, adversary foreign military intelligence reconnaissance into command structure.",
+    "attack_vectors": [
+      "Executive whaling targeting senior commanders with weaponized documents",
+      "Internal network lateral pivoting using exposed directory blueprints",
+      "Supply-chain compromise of naval dockyard engineering contractors"
+    ]
+  },
+  {
+    "id": 5,
+    "name": "Popular Life Insurance",
+    "kpi": "Non-KPI",
+    "sector": "Financial Insurance & Investments",
+    "threat": "CRITICAL",
+    "logo": null,
+    "abbr": "PLI",
+    "color": "#b45309",
+    "evidence": [
+      "EVD-028",
+      "EVD-029"
+    ],
+    "onion": "http://sarcomawmawlhov7o5mdhz4eszxxlkyaoiyiy2b5iwxnds2dmb4jakad.onion/?page=5",
+    "leaked_data": [
+      "~36 GB client insurance policy files & claim data",
+      "Premium payment transaction histories & family nominee records",
+      "Branch office server ledgers & daily collection receipts",
+      "Policyholder National ID cards and verification files"
+    ],
+    "impact_citizen": "Direct financial extortion of policyholders using exact policy valuations and family nominee contacts.",
+    "impact_institutional": "Nationwide operational paralysis across branch servers lasting weeks; public trust loss causing mass policy cancellations.",
+    "attack_vectors": [
+      "Voice phishing (vishing) quoting authentic policy numbers to divert premium payments",
+      "Ransomware extortion threatening permanent destruction of unbacked branch databases",
+      "Compromising branch network routers via unpatched remote management interfaces"
+    ]
+  },
+  {
+    "id": 6,
+    "name": "The City Bank",
+    "kpi": "Non-KPI",
+    "sector": "Private Commercial Banking",
+    "threat": "HIGH",
+    "logo": null,
+    "abbr": "CBL",
+    "color": "#b91c1c",
+    "evidence": [
+      "EVD-039"
+    ],
+    "onion": "http://funkxxkovrk7ctnggbjnthdajav4ggex53k6m2x3esjwlxrkb3qiztid.onion/",
+    "leaked_data": [
+      "Corporate financial audit files & portfolio risk assessments",
+      "Management network drives & executive committee strategy notes",
+      "Inter-departmental operational planning sheets and minutes",
+      "Commercial business partnership assessment memos"
+    ],
+    "impact_citizen": "Indirect exposure of corporate client financing terms and trade secrets.",
+    "impact_institutional": "Disclosure of proprietary banking strategies, commercial competitive disadvantage, institutional reputational damage.",
+    "attack_vectors": [
+      "DDoS-extortion hybrid knocking out digital banking portals while demanding ransom",
+      "Executive impersonation forging board resolution signatures for wire fraud",
+      "Phishing corporate finance staff using authentic internal letterhead layouts"
+    ]
+  },
+  {
+    "id": 7,
+    "name": "Bank Asia",
+    "kpi": "Non-KPI",
+    "sector": "Private Commercial Banking",
+    "threat": "HIGH",
+    "logo": null,
+    "abbr": "BA",
+    "color": "#4338ca",
+    "evidence": [
+      "EVD-010",
+      "EVD-011",
+      "EVD-012"
+    ],
+    "onion": "http://basherq53eniermxovo3bkduw5qqq5bkqcml3qictfmamgvmzovykyqd.onion/",
+    "leaked_data": [
+      "Commercial loan applications & borrower financial dossiers",
+      "Internal security vulnerability audits & risk valuation ledgers",
+      "Branch credit risk valuation assessments and collateral documents"
+    ],
+    "impact_citizen": "Borrower financial privacy exposed to predatory lenders and business competitors.",
+    "impact_institutional": "Disclosure of internal audit discrepancies leading to institutional credit rating downgrades.",
+    "attack_vectors": [
+      "Direct unpatched software exploitation using vulnerabilities listed in leaked audit logs",
+      "Infiltrating corporate borrowers networks via trusted bank connection channels",
+      "Password spraying against customer internet banking and loan officer portals"
+    ]
+  },
+  {
+    "id": 8,
+    "name": "BD Group (Conglomerate)",
+    "kpi": "Non-KPI",
+    "sector": "Industrial Manufacturing & Commerce",
+    "threat": "HIGH",
+    "logo": null,
+    "abbr": "BDG",
+    "color": "#4d7c0f",
+    "evidence": [
+      "EVD-003"
+    ],
+    "onion": "http://arcuufpr5xxbbkin4mlidt7itmr6znlppk63jbtkeguuhszmc5g7qdyd.onion/?p=515",
+    "leaked_data": [
+      "Executive email server mailbox archives and correspondence",
+      "Supply chain procurement contracts, supplier pricing & export invoices",
+      "Letter of Credit (LC) banking documentation & shipment logs"
+    ],
+    "impact_citizen": "Factory worker personal records exposed; corporate executive blackmail.",
+    "impact_institutional": "Immediate cancellation of multi-million dollar export orders with global buyers; commercial industrial espionage.",
+    "attack_vectors": [
+      "Man-in-the-Email (BEC) modifying bank beneficiary details on international export invoices",
+      "Supply chain sabotage transmitting fraudulent cancellation notices to international partners",
+      "Credential theft via compromised enterprise webmail logins"
+    ]
+  },
+  {
+    "id": 9,
+    "name": "RabbitBD",
+    "kpi": "Non-KPI",
+    "sector": "E-Commerce & Digital Retail",
+    "threat": "HIGH",
+    "logo": null,
+    "abbr": "RBD",
+    "color": "#c2410c",
+    "evidence": [
+      "EVD-030"
+    ],
+    "onion": "http://ks5424y3wpr5zlug5c7i6svvxweinhbdcqcfnptkfcutrncfazzgz5id.onion/",
+    "leaked_data": [
+      "E-commerce customer order and checkout history tables",
+      "Customer phone numbers, residential delivery addresses, and cart totals",
+      "Order reference codes and transaction status logs"
+    ],
+    "impact_citizen": "Home address mapping; rampant delivery package fraud and identity theft.",
+    "impact_institutional": "Loss of consumer platform trust; payment gateway dispute penalties and chargebacks.",
+    "attack_vectors": [
+      "Fake Cash-on-Delivery (COD) scam dispatching empty parcels for cash collection",
+      "Web skimming (Magecart) injecting malicious JavaScript sniffers into payment checkout pages",
+      "Customer credential stuffing using leaked passwords from public breach compilations"
+    ]
+  },
+  {
+    "id": 10,
+    "name": "Shwapno Superstore (ACI)",
+    "kpi": "Non-KPI",
+    "sector": "National Retail Chain (410 GB Dump)",
+    "threat": "HIGH",
+    "logo": null,
+    "abbr": "SWP",
+    "color": "#dc2626",
+    "evidence": [
+      "EVD-031",
+      "EVD-032"
+    ],
+    "onion": "http://lockbitsuppyx2jegaoyiw44ica5vdho63m5ijjlmfb7omq3tfr3qhyd.onion/",
+    "leaked_data": [
+      "4,100,000+ customer loyalty records (410 GB database)",
+      "Full customer names, phone numbers, and residential addresses",
+      "Longitudinal shopping basket histories and store visit frequencies"
+    ],
+    "impact_citizen": "Targeted profiling of affluent households; privacy invasion via purchase habits tracking.",
+    "impact_institutional": "Massive consumer class-action backlash; permanent loss of competitive customer intelligence.",
+    "attack_vectors": [
+      "Credential stuffing replaying leaked phone/password combinations against banking apps",
+      "Mass smishing sending fake loyalty points expiration SMS messages to steal OTPs",
+      "Social engineering targeting retail POS terminals across branch outlets"
+    ]
+  },
+  {
+    "id": 11,
+    "name": "NovoAir",
+    "kpi": "Non-KPI",
+    "sector": "Domestic Commercial Aviation",
+    "threat": "LOW",
+    "logo": "civil-aviation.png",
+    "abbr": "VQ",
+    "color": "#0891b2",
+    "evidence": [
+      "EVD-025",
+      "EVD-026",
+      "EVD-027"
+    ],
+    "onion": "http://basherq53eniermxovo3bkduw5qqq5bkqcml3qictfmamgvmzovykyqd.onion/",
+    "leaked_data": [
+      "Pilot and crew flight duty rosters, rest schedules & aircraft assignments",
+      "Operating cost sheets and internal accounting audits",
+      "Aircraft maintenance rotation charts and aviation logs"
+    ],
+    "impact_citizen": "Flight schedule unreliability, unexpected travel delays.",
+    "impact_institutional": "Operational discipline breakdown; vendor negotiation leverage lost due to exposed pricing.",
+    "attack_vectors": [
+      "Flight operations sabotage spoofing crew communications to broadcast fake delays",
+      "Aviation vendor billing fraud submitting altered maintenance invoices based on leaked rates",
+      "Credential harvesting from crew portal authentication endpoints"
+    ]
+  },
+  {
+    "id": 12,
+    "name": "IBN SINA Trust",
+    "kpi": "Non-KPI",
+    "sector": "Healthcare & Diagnostic Services",
+    "threat": "LOW",
+    "logo": "Directorate_General_of_Health_Services__DGHS_.png",
+    "abbr": "IBN",
+    "color": "#059669",
+    "evidence": [
+      "EVD-040"
+    ],
+    "onion": "http://krybitxdpxohsmjooeb3gbgpmdddreh6mnflzac6bnezz74b7yje67yd.onion/",
+    "leaked_data": [
+      "Web server directory structures and configuration files",
+      "Hospital administrative staff metadata and directory indexing logs",
+      "Internal diagnostic system infrastructure layouts"
+    ],
+    "impact_citizen": "Risk of patient Electronic Health Records (EHR) exposure if deeper database breach occurs.",
+    "impact_institutional": "Public diagnostic portal vulnerability; medical confidentiality legal non-compliance.",
+    "attack_vectors": [
+      "SQL injection (SQLi) and web shell deployment into patient pathology archives",
+      "Pathology ransomware encrypting digital report servers to halt diagnostic releases",
+      "Brute-forcing exposed doctor and staff webmail accounts"
+    ]
+  },
+  {
+    "id": 13,
+    "name": "tdotnet",
+    "kpi": "Non-KPI",
+    "sector": "ISP & Telecommunications Gateway",
+    "threat": "LOW",
+    "logo": "bangladesh-telecommunications-company-limited-logo-png_seeklogo-492053.png",
+    "abbr": "TDN",
+    "color": "#2563eb",
+    "evidence": [
+      "EVD-037",
+      "EVD-038"
+    ],
+    "onion": "http://yhgphvfgaecacgtlbn67u7yfhafe6evnj4gs4s2oyb3hzjnlhq45azqd.onion/blog",
+    "leaked_data": [
+      "Core network router configuration files (~280 MB)",
+      "Routing tables, gateway IP maps & admin console access logs",
+      "Internal network topology blueprints and peering parameters"
+    ],
+    "impact_citizen": "Broadband subscriber traffic monitoring; unencrypted session snooping.",
+    "impact_institutional": "Regional internet blackouts; upstream telecom interconnection routing degradation.",
+    "attack_vectors": [
+      "BGP / DNS hijacking redirecting banking traffic to spoofed adversary clone portals",
+      "Man-in-the-Middle (MitM) packet inspection injecting spyware into subscriber streams",
+      "Administrative console credential brute-forcing on core edge routers"
+    ]
+  },
+  {
+    "id": 14,
+    "name": "Malindoair",
+    "kpi": "Non-KPI",
+    "sector": "Regional Commercial Aviation",
+    "threat": "LOW",
+    "logo": "civil-aviation.png",
+    "abbr": "OD",
+    "color": "#d97706",
+    "evidence": [
+      "EVD-035",
+      "EVD-036"
+    ],
+    "onion": "http://bashex7mokreyoxl6wlswxl4foi7okgs7or7aergnuiockuoq35yt3ad.onion/",
+    "leaked_data": [
+      "Passenger Name Records (PNR) dumps and e-ticket samples",
+      "Flight schedules and agency booking reference logs",
+      "Travel agent identification records"
+    ],
+    "impact_citizen": "Passengers targeted with fraudulent booking cancellation and refund scams.",
+    "impact_institutional": "Customer flight cancellations and friction with regional travel agencies.",
+    "attack_vectors": [
+      "PNR scraping and ticket refund fraud claiming refunds to attacker bank accounts",
+      "Travel agency phishing sending malicious discounted fare memos to partner agents",
+      "Booking portal API scraping without authentication rate-limiting"
+    ]
+  },
+  {
+    "id": 15,
+    "name": "BBGC (Govt College)",
+    "kpi": "Non-KPI",
+    "sector": "Public Education & Academia",
+    "threat": "LOW",
+    "logo": "Presidential_Emblem_of_Bangladesh.png",
+    "abbr": "BBG",
+    "color": "#4f46e5",
+    "evidence": [
+      "EVD-002"
+    ],
+    "onion": "http://ks5424y3wpr5zlug5c7i6svvxweinhbdcqcfnptkfcutrncfazzgz5id.onion/",
+    "leaked_data": [
+      "Educational server directory files and server indexes",
+      "Teacher and student academic registration rosters",
+      "Internal administrative circulars and payroll receipts"
+    ],
+    "impact_citizen": "Minor students contact records exposed; predatory academic marketing scams.",
+    "impact_institutional": "College website defacement; student grading record corruption and downtime.",
+    "attack_vectors": [
+      "CMS admin takeover exploiting default credentials to post political defacements",
+      "Tuition fee redirection scam editing portal notices to collect fees into fake accounts",
+      "Credential harvesting from institutional webmail and student portals"
+    ]
+  },
+  {
+    "id": 16,
+    "name": "ECS / NID Wing",
+    "kpi": "KPI-20",
+    "sector": "Civil Identity Registry",
+    "threat": "CRITICAL",
+    "logo": "BD-NID.png",
+    "abbr": "NID",
+    "color": "#dc2626",
+    "evidence": [
+      "EVD-014",
+      "EVD-015",
+      "EVD-016",
+      "EVD-017",
+      "EVD-018",
+      "EVD-019",
+      "EVD-020",
+      "EVD-021"
+    ],
+    "onion": "Telegram Channel Bot & Underground Breach Forum Archive (ClearWeb/Tor)",
+    "leaked_data": [
+      "National ID numbers (10/17 digit) & complete voter registry",
+      "Full citizen names, parental names & comprehensive family trees",
+      "Present/permanent addresses, birth dates & blood groups",
+      "Official citizen facial portraits & partner API authentication keys"
+    ],
+    "impact_citizen": "Universal identity theft, mass unauthorized SIM registrations, bKash/Nagad account takeovers, fraudulent bank loans, illegal land deeds.",
+    "impact_institutional": "Complete systemic failure of national e-KYC infrastructure; vulnerability across 170+ partner banks and telcos.",
+    "attack_vectors": [
+      "Deepfake biometric spoofing synthesizing video avatars to bypass bank video KYC checks",
+      "SIM-Swap account takeover (ATO) using forged NIDs to intercept financial SMS OTPs",
+      "Automated API scraping abusing leaked API keys in Telegram query bots"
+    ]
+  },
+  {
+    "id": 17,
+    "name": "Armed Forces Division (AFD)",
+    "kpi": "KPI-42",
+    "sector": "Tri-Services Headquarters",
+    "threat": "CRITICAL",
+    "logo": "Bangladesh_Armed_Forces.png",
+    "abbr": "AFD",
+    "color": "#15803d",
+    "evidence": [
+      "EVD-004",
+      "EVD-005"
+    ],
+    "onion": "Underground Hacking Forum / Babuk Ransomware Archive",
+    "leaked_data": [
+      "Military headquarters administrative letters & memorandums",
+      "Officer promotion, posting & personnel circulars",
+      "Civilian ministry coordination files & service records",
+      "Tri-service administrative operational files"
+    ],
+    "impact_citizen": "Security vulnerability for senior defense executives and their families.",
+    "impact_institutional": "Exposure of tri-service joint command communication workflows; risk of adversary military deception.",
+    "attack_vectors": [
+      "Trusted document drop forging authentic military letterheads containing macro spyware",
+      "Chain of command spoofing fabricating urgent administrative directives to create operational paralysis",
+      "Watering-hole attacks compromising military service portals"
+    ]
+  },
+  {
+    "id": 18,
+    "name": "Confidence Group",
+    "kpi": "Non-KPI",
+    "sector": "Power Generation Infrastructure",
+    "threat": "HIGH",
+    "logo": "bangladesh-bidyut-unnayan-board-logo-png_seeklogo-334650.png",
+    "abbr": "CFG",
+    "color": "#ca8a04",
+    "evidence": [
+      "EVD-022"
+    ],
+    "onion": "RansomHub Extortion Cartel / Corporate Intrusion Record",
+    "leaked_data": [
+      "350 GB power plant engineering blueprints & technical schematics",
+      "BPDB (Power Development Board) joint venture power purchase agreements",
+      "Balance sheets, executive correspondence & internal financial audits"
+    ],
+    "impact_citizen": "Vulnerability of national power grid risking civilian electricity blackouts.",
+    "impact_institutional": "Physical power station engineering blueprints exposed leaving generation assets vulnerable to hostile disruption.",
+    "attack_vectors": [
+      "Cyber-physical ICS/SCADA attacks using schematics to remotely tamper with turbine load telemetry",
+      "Tender bid interception stealing pricing structures prior to government power contract auctions",
+      "Lateral traversal from enterprise corporate networks into power generation SCADA systems"
+    ]
+  },
+  {
+    "id": 19,
+    "name": "Flora IT / Flora Limited",
+    "kpi": "Non-KPI",
+    "sector": "Strategic Government IT Vendor (Supply Chain)",
+    "threat": "HIGH",
+    "logo": "Bangladesh_Computer_Council.png",
+    "abbr": "FLR",
+    "color": "#0284c7",
+    "evidence": [
+      "EVD-023",
+      "EVD-024",
+      "EVD-033"
+    ],
+    "onion": "http://wkqvktnmr2slazl76opbkdli4ia6gznhxln2z5wny54hf4kzjwgqvxyd.onion/ (Kraken)",
+    "leaked_data": [
+      "Custom software source code built for government ministries",
+      "Hardcoded database connection strings, passwords & VPN keys",
+      "Administrative API access tokens & FTP credentials",
+      "Government client server configuration profiles"
+    ],
+    "impact_citizen": "Secondary compromise of all citizen data stored across vendor-supported government databases.",
+    "impact_institutional": "Catastrophic supply-chain vulnerability allowing direct lateral traversal into government enclaves.",
+    "attack_vectors": [
+      "Supply chain pivoting (The Master Key) replaying vendor credentials to access ministry backends",
+      "Software update poisoning trojanning official updates distributed to government clients",
+      "CI/CD pipeline compromise injecting persistent backdoors into ministry application builds"
+    ]
+  },
+  {
+    "id": 20,
+    "name": "Classified Infrastructure",
+    "kpi": "Access Broker",
+    "sector": "Network Access Broker Auction",
+    "threat": "LOW",
+    "logo": "ntmc-logo-png_seeklogo-556021.png",
+    "abbr": "SEC",
+    "color": "#64748b",
+    "evidence": [
+      "EVD-033"
+    ],
+    "onion": "http://wkqvktnmr2slazl76opbkdli4ia6gznhxln2z5wny54hf4kzjwgqvxyd.onion/",
+    "leaked_data": [
+      "Enterprise network share permissions & drive structures",
+      "Active Directory domain layout metadata",
+      "Server directory indexing profiles and administrative access configurations"
+    ],
+    "impact_citizen": "Exposure contingent on specific undisclosed entity identity.",
+    "impact_institutional": "Commercial auction of unauthorized network administrative credentials to extortion groups.",
+    "attack_vectors": [
+      "Initial Access Broker (IAB) auction selling network foothold to ransomware syndicates",
+      "Privilege escalation harvesting Domain Admin tokens via misconfigured shares",
+      "Persistence establishment via hidden remote access tunnels and backdoors"
+    ]
+  }
+]

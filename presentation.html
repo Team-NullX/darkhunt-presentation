@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Target Inventory & Logos — Project Dark Hunt Presentation</title>
+  <link rel="stylesheet" href="presentation.css">
+  <link rel="icon" type="image/png" href="tnx-logo.png">
+</head>
+<body>
+
+  <!-- Top Navigation Bar -->
+  <nav class="navbar">
+    <div class="container nav-container">
+      <a href="presentation.html" class="brand">
+        <span class="brand-badge">RESTRICTED</span>
+        <div class="brand-text">
+          <h1>Project Dark Hunt</h1>
+          <p>Cyber Threat Intelligence Presentation // Team NullX</p>
+        </div>
+      </a>
+
+      <div class="nav-links">
+        <a href="presentation.html" class="nav-link active">Page 1: Target Logos</a>
+        <a href="matrix.html" class="nav-link">Page 2: Threat Matrix</a>
+        <a href="defense.html" class="nav-link">Page 3: Defense Blueprint</a>
+        <a href="Master_Cyber_Threat_Matrix_English.pdf" target="_blank" class="nav-link nav-pill-pdf">PDF Dossier 📥</a>
+        <a href="index.html" class="nav-link" style="border: 1px solid var(--border-color);">Classic App ↗</a>
+        <button id="themeToggle" class="theme-toggle-btn" title="Toggle Light / Dark mode">☀️ Theme</button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Main Body Content -->
+  <main class="container" style="flex: 1;">
+    
+    <!-- Hero / Header -->
+    <header class="page-hero">
+      <div class="hero-tag">Executive Presentation // Page 1 of 3</div>
+      <h2 class="hero-title">Monitored Target Entities & Visual Identity Ledger</h2>
+      <p class="hero-desc">
+        Comprehensive catalog of all 20 critical organizations, government agencies, state enterprises, and commercial institutions verified under Project Dark Hunt's dual-proof criteria (Visual Screenshot Evidence + Dark Web Tor .onion Origin).
+      </p>
+
+      <div class="stat-pills">
+        <div class="stat-pill"><strong>20</strong> Verified Target Organizations</div>
+        <div class="stat-pill"><strong>40</strong> Visual Evidence Files (<span style="font-family: var(--font-mono);">EVD-001 - EVD-040</span>)</div>
+        <div class="stat-pill"><strong>16</strong> Dark Web Tor .onion Sources</div>
+        <div class="stat-pill"><strong>7</strong> National Critical Sectors</div>
+        <div class="stat-pill" style="border-color: #ef4444; color: #fca5a5;"><strong>6 Critical</strong> Severity Targets</div>
+      </div>
+    </header>
+
+    <!-- Controls Bar -->
+    <section class="controls-bar">
+      <div class="search-input-group">
+        <span class="search-icon">🔍</span>
+        <input type="text" id="targetSearchInput" placeholder="Search target name, sector, KPI ID, evidence..." aria-label="Search Targets">
+      </div>
+
+      <div class="filter-btn-group" id="sectorFilterGroup">
+        <button class="filter-btn active" data-sector="ALL">All Sectors (20)</button>
+        <button class="filter-btn" data-sector="Defense & Law Enforcement">Defense & LE (3)</button>
+        <button class="filter-btn" data-sector="Banking & Finance">Banking & Finance (4)</button>
+        <button class="filter-btn" data-sector="Aviation & Transport">Aviation (3)</button>
+        <button class="filter-btn" data-sector="Civil Identity">Identity (1)</button>
+        <button class="filter-btn" data-sector="Retail & Commerce">Retail / Com (2)</button>
+        <button class="filter-btn" data-sector="Telecom & Utilities">Telecom & Power (3)</button>
+        <button class="filter-btn" data-sector="Healthcare & Academia">Health / Edu (2)</button>
+        <button class="filter-btn" data-sector="IT Vendor">IT Vendor (2)</button>
+      </div>
+    </section>
+
+    <!-- Target Cards Grid -->
+    <section class="targets-grid" id="targetsGrid">
+      <!-- Injected dynamically via presentation.js -->
+    </section>
+
+  </main>
+
+  <!-- Modal for Deep-Dive Target Details -->
+  <div class="modal-backdrop" id="targetDetailModal">
+    <div class="modal-card">
+      <button class="modal-close-btn" id="modalCloseBtn">&times;</button>
+      <div id="modalContent">
+        <!-- Rendered dynamically -->
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="app-footer">
+    <div class="container footer-content">
+      <div>
+        <strong style="color: var(--text-main); font-size: 0.9rem;">Project Dark Hunt</strong>
+        <p>A non-speculative empirical Cyber Threat Intelligence inquiry by Team NullX.</p>
+        <div class="team-members">
+          <div class="team-member-item">
+            <span class="team-member-role">Project Lead & Planning</span>
+            <span class="team-member-name">Rahat Sahriar Rafi</span>
+          </div>
+          <div class="team-member-item">
+            <span class="team-member-role">Website Development & Evidence</span>
+            <span class="team-member-name">Md. Tanjim Islam</span>
+          </div>
+          <div class="team-member-item">
+            <span class="team-member-role">Evidence Verification</span>
+            <span class="team-member-name">MD Rakib Hasan Apon</span>
+          </div>
+        </div>
+      </div>
+      <div style="text-align: right;">
+        <span class="badge badge-critical" style="margin-bottom: 0.5rem;">RESTRICTED CTI ARCHIVE</span>
+        <p>Classification: Lawful Passive OSINT // Redacted Citizen PII</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="presentation.js"></script>
+</body>
+</html>

@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tri-Partite Defense Blueprint — Project Dark Hunt Presentation</title>
+  <link rel="stylesheet" href="presentation.css">
+  <link rel="icon" type="image/png" href="tnx-logo.png">
+</head>
+<body>
+
+  <!-- Top Navigation Bar -->
+  <nav class="navbar">
+    <div class="container nav-container">
+      <a href="presentation.html" class="brand">
+        <span class="brand-badge">RESTRICTED</span>
+        <div class="brand-text">
+          <h1>Project Dark Hunt</h1>
+          <p>Cyber Threat Intelligence Presentation // Team NullX</p>
+        </div>
+      </a>
+
+      <div class="nav-links">
+        <a href="presentation.html" class="nav-link">Page 1: Target Logos</a>
+        <a href="matrix.html" class="nav-link">Page 2: Threat Matrix</a>
+        <a href="defense.html" class="nav-link active">Page 3: Defense Blueprint</a>
+        <a href="Master_Cyber_Threat_Matrix_English.pdf" target="_blank" class="nav-link nav-pill-pdf">PDF Dossier 📥</a>
+        <a href="index.html" class="nav-link" style="border: 1px solid var(--border-color);">Classic App ↗</a>
+        <button id="themeToggle" class="theme-toggle-btn" title="Toggle Light / Dark mode">☀️ Theme</button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Main Body Content -->
+  <main class="container" style="flex: 1;">
+    
+    <!-- Hero / Header -->
+    <header class="page-hero">
+      <div class="hero-tag">Executive Presentation // Page 3 of 3</div>
+      <h2 class="hero-title">Tri-Partite National Defense Blueprint & Remediation Strategy</h2>
+      <p class="hero-desc">
+        A coordinated multi-tier framework converting threat intelligence into concrete defensive actions across National Cyber Emergency Response Teams (CERT), Key Point Installation (KPI) Operators, and Law Enforcement Agencies (LEA).
+      </p>
+
+      <div class="stat-pills">
+        <div class="stat-pill"><strong>Tier 1:</strong> National CERT / CIRT</div>
+        <div class="stat-pill"><strong>Tier 2:</strong> Critical Infrastructure Operators</div>
+        <div class="stat-pill"><strong>Tier 3:</strong> Law Enforcement & Regulators</div>
+        <div class="stat-pill" style="border-color: #10b981; color: #6ee7b7;"><strong>Zero Trust</strong> Architecture</div>
+      </div>
+    </header>
+
+    <!-- Defense Cards Grid -->
+    <section class="defense-grid">
+      
+      <!-- Card 1: National CERT -->
+      <article class="defense-card">
+        <div class="defense-card-header">
+          <div class="defense-icon-box" style="color: #3b82f6;">🛡️</div>
+          <div class="defense-card-title">
+            <h3>National CERT / BGD e-GOV CIRT</h3>
+            <p>National Policy, Incident Coordination & Regulatory Audits</p>
+          </div>
+        </div>
+
+        <ul class="defense-step-list">
+          <li class="defense-step-item">
+            <span class="defense-step-num">1</span>
+            <div class="defense-step-content">
+              <strong>Mandatory Enterprise Active Directory Resets</strong>
+              <p>Enforce immediate domain credential resets across all government agencies, coupled with mandatory FIDO2/WebAuthn hardware tokens for all domain administrative accounts.</p>
+            </div>
+          </li>
+          <li class="defense-step-item">
+            <span class="defense-step-num">2</span>
+            <div class="defense-step-content">
+              <strong>Hardening National Verification APIs</strong>
+              <p>Deprecate unauthenticated National ID and voter lookup endpoints. Enforce zero-knowledge tokenized verification frameworks for banking and telecom partners.</p>
+            </div>
+          </li>
+          <li class="defense-step-item">
+            <span class="defense-step-num">3</span>
+            <div class="defense-step-content">
+              <strong>Mandatory Supply-Chain Contractor Audits</strong>
+              <p>Enact legally binding SAST/DAST source code security audits for all private IT contractors (e.g., Flora Limited) delivering software to state agencies.</p>
+            </div>
+          </li>
+          <li class="defense-step-item">
+            <span class="defense-step-num">4</span>
+            <div class="defense-step-content">
+              <strong>Centralized CTI Darknet Early-Warning Feed</strong>
+              <p>Establish automated real-time monitoring of Russian/Chinese/Tor forums to instantly flag leaks involving .gov.bd, .mil.bd, and core financial institutions.</p>
+            </div>
+          </li>
+        </ul>
+      </article>
+
+      <!-- Card 2: KPI Operators -->
+      <article class="defense-card">
+        <div class="defense-card-header">
+          <div class="defense-icon-box" style="color: #f59e0b;">🏭</div>
+          <div class="defense-card-title">
+            <h3>Key Point Installation (KPI) Operators</h3>
+            <p>Critical Infrastructure, Banks, Utilities & Telcos</p>
+          </div>
+        </div>
+
+        <ul class="defense-step-list">
+          <li class="defense-step-item">
+            <span class="defense-step-num">1</span>
+            <div class="defense-step-content">
+              <strong>Physical Air-Gapping & Micro-Segmentation</strong>
+              <p>Completely isolate SCADA/ICS utility networks, core banking databases, and signaling backbones from general corporate office networks.</p>
+            </div>
+          </li>
+          <li class="defense-step-item">
+            <span class="defense-step-num">2</span>
+            <div class="defense-step-content">
+              <strong>100% Endpoint Detection & Response (EDR)</strong>
+              <p>Deploy enterprise EDR agents on all servers and administrative workstations with automated ransomware behavioral heuristics enabled.</p>
+            </div>
+          </li>
+          <li class="defense-step-item">
+            <span class="defense-step-num">3</span>
+            <div class="defense-step-content">
+              <strong>Immutable Offline Backups (3-2-1 Strategy)</strong>
+              <p>Maintain cryptographically signed offline and WORM (Write Once Read Many) backups physically disconnected from the corporate active directory.</p>
+            </div>
+          </li>
+          <li class="defense-step-item">
+            <span class="defense-step-num">4</span>
+            <div class="defense-step-content">
+              <strong>Strict API Gateways & Rate-Limiting</strong>
+              <p>Enforce mutual TLS (mTLS) and granular token-bucket rate limits on all partner integration endpoints to prevent mass data scraping.</p>
+            </div>
+          </li>
+        </ul>
+      </article>
+
+      <!-- Card 3: Law Enforcement & Regulators -->
+      <article class="defense-card">
+        <div class="defense-card-header">
+          <div class="defense-icon-box" style="color: #ef4444;">⚖️</div>
+          <div class="defense-card-title">
+            <h3>Law Enforcement & Regulatory Bodies</h3>
+            <p>Cyber Police, CID, NTMC, BTRC & Bangladesh Bank</p>
+          </div>
+        </div>
+
+        <ul class="defense-step-list">
+          <li class="defense-step-item">
+            <span class="defense-step-num">1</span>
+            <div class="defense-step-content">
+              <strong>Rapid Incident Notification Hotline</strong>
+              <p>Create a classified, 24/7 technical alert pipeline linking law enforcement cyber units with critical infrastructure security operations teams.</p>
+            </div>
+          </li>
+          <li class="defense-step-item">
+            <span class="defense-step-num">2</span>
+            <div class="defense-step-content">
+              <strong>Victim Citizen Identity Protection Protocol</strong>
+              <p>Provide an emergency flag system enabling citizens whose full NID, family tree, and facial portraits are leaked to lock digital SIM and bank accounts.</p>
+            </div>
+          </li>
+          <li class="defense-step-item">
+            <span class="defense-step-num">3</span>
+            <div class="defense-step-content">
+              <strong>Cross-Border Darknet Takedown Requests</strong>
+              <p>Collaborate with Interpol and international cyber agencies to disrupt ransomware syndicates (LockBit, RansomHub, Babuk) auctioning sovereign data.</p>
+            </div>
+          </li>
+          <li class="defense-step-item">
+            <span class="defense-step-num">4</span>
+            <div class="defense-step-content">
+              <strong>Financial Penalties for Gross Security Negligence</strong>
+              <p>Enforce statutory penalties for organizations failing to implement baseline cryptographic protections or concealing significant citizen data breaches.</p>
+            </div>
+          </li>
+        </ul>
+      </article>
+
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="app-footer">
+    <div class="container footer-content">
+      <div>
+        <strong style="color: var(--text-main); font-size: 0.9rem;">Project Dark Hunt</strong>
+        <p>A non-speculative empirical Cyber Threat Intelligence inquiry by Team NullX.</p>
+        <div class="team-members">
+          <div class="team-member-item">
+            <span class="team-member-role">Project Lead & Planning</span>
+            <span class="team-member-name">Rahat Sahriar Rafi</span>
+          </div>
+          <div class="team-member-item">
+            <span class="team-member-role">Website Development & Evidence</span>
+            <span class="team-member-name">Md. Tanjim Islam</span>
+          </div>
+          <div class="team-member-item">
+            <span class="team-member-role">Evidence Verification</span>
+            <span class="team-member-name">MD Rakib Hasan Apon</span>
+          </div>
+        </div>
+      </div>
+      <div style="text-align: right;">
+        <span class="badge badge-critical" style="margin-bottom: 0.5rem;">RESTRICTED CTI ARCHIVE</span>
+        <p>Classification: Lawful Passive OSINT // Redacted Citizen PII</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="presentation.js"></script>
+</body>
+</html>
