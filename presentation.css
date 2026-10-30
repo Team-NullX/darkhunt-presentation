@@ -62,10 +62,20 @@ body {
   color: var(--ink);
   font-family: "Roboto", sans-serif;
   font-size: 1rem;
-  line-height: 1.5;
-  min-height: 100vh;
+  line-height: 1.4;
+  height: 100vh;
+  max-height: 100vh;
+  overflow: hidden;
   display: flex;
   flex-direction: column;
+}
+
+@media (max-width: 768px), (max-height: 480px) {
+  body {
+    height: auto;
+    max-height: none;
+    overflow-y: auto;
+  }
 }
 
 a { color: var(--forest); text-decoration: none; }
@@ -78,28 +88,29 @@ button { font: inherit; }
   z-index: 50;
   background: var(--paper);
   border-bottom: 1px solid var(--rule);
+  flex-shrink: 0;
 }
 
 .nav-container {
-  width: min(100% - 2rem, 1500px);
+  width: min(100% - 2rem, 1650px);
   margin: 0 auto;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 1rem;
-  padding: 0.5rem 1rem;
+  gap: 0.75rem;
+  padding: 0.3rem 1rem;
 }
 
 .nav-side {
   display: flex;
   align-items: center;
-  gap: 0.75rem;
+  gap: 0.65rem;
   min-width: 0;
 }
 
 .nav-logo {
-  width: 44px;
-  height: 44px;
+  width: 36px;
+  height: 36px;
   object-fit: contain;
   flex-shrink: 0;
 }
@@ -107,7 +118,7 @@ button { font: inherit; }
 .nav-links {
   display: flex;
   align-items: center;
-  gap: 0.35rem;
+  gap: 0.3rem;
   flex-wrap: wrap;
 }
 
@@ -115,15 +126,15 @@ button { font: inherit; }
   background: transparent;
   border: 1px solid transparent;
   border-radius: 999px;
-  padding: 0.35rem 0.85rem;
-  font-size: 0.9rem;
+  padding: 0.25rem 0.75rem;
+  font-size: 0.82rem;
   cursor: pointer;
   color: var(--ink);
   transition: all 0.15s ease;
   text-decoration: none;
   display: inline-flex;
   align-items: center;
-  gap: 5px;
+  gap: 4px;
 }
 
 .nav-btn:hover { 
@@ -139,7 +150,7 @@ button { font: inherit; }
 .nav-brand {
   display: flex;
   align-items: center;
-  gap: 1.25rem;
+  gap: 0.85rem;
 }
 
 .nav-brand-text {
@@ -148,16 +159,18 @@ button { font: inherit; }
 
 .header-title {
   margin: 0;
-  font-size: 1.15rem;
+  font-size: 1.05rem;
   font-weight: 800;
   color: var(--ink);
   letter-spacing: -0.01em;
+  line-height: 1.1;
 }
 
 .header-subtitle {
   margin: 0;
-  font-size: 0.75rem;
+  font-size: 0.68rem;
   color: var(--quiet);
+  line-height: 1.1;
 }
 
 .theme-toggle {
@@ -165,8 +178,8 @@ button { font: inherit; }
   border: 1px solid var(--forest);
   color: var(--forest);
   border-radius: 999px;
-  padding: 0.35rem 0.85rem;
-  font-size: 0.8rem;
+  padding: 0.22rem 0.75rem;
+  font-size: 0.75rem;
   font-weight: 600;
   cursor: pointer;
   transition: all 0.15s ease;
@@ -176,22 +189,25 @@ button { font: inherit; }
   background: color-mix(in srgb, var(--forest) 15%, transparent); 
 }
 
-/* Slide Deck Wrapper */
+/* Slide Deck Wrapper — Perfect Single Screen PPTX Layout */
 .slide-wrapper {
-  width: min(100% - 2rem, 1500px);
+  width: min(100% - 1.5rem, 1650px);
   margin: 0 auto;
-  padding: 0.75rem 1rem 1rem;
+  padding: 0.35rem 0.75rem 0.45rem;
   display: flex;
   flex-direction: column;
-  min-height: calc(100vh - 75px);
+  flex: 1;
+  min-height: 0;
   justify-content: space-between;
+  overflow: hidden;
 }
 
 /* Slide Header & Stamps */
 .slide-header {
   text-align: center;
-  margin-bottom: 0.75rem;
+  margin-bottom: 0.25rem;
   position: relative;
+  flex-shrink: 0;
 }
 
 .stamp-badge,
@@ -200,79 +216,76 @@ button { font: inherit; }
   border-radius: 999px;
   background: var(--forest);
   color: var(--on-forest);
-  padding: 0.2rem 0.75rem;
-  font-size: 0.78rem;
+  padding: 0.12rem 0.65rem;
+  font-size: 0.7rem;
   font-weight: 700;
   font-family: ui-monospace, monospace;
   letter-spacing: 0.05em;
-  margin-bottom: 0.25rem;
+  margin-bottom: 0.1rem;
 }
 
 .slide-header h2 {
-  font-size: 1.55rem;
+  font-size: clamp(1.1rem, 2vh, 1.4rem);
   font-weight: 800;
   color: var(--ink);
-  margin: 0.2rem 0;
+  margin: 0.1rem 0;
   letter-spacing: -0.02em;
+  line-height: 1.2;
 }
 
 .slide-header p {
-  font-size: 0.85rem;
+  font-size: clamp(0.7rem, 1.1vh, 0.78rem);
   color: var(--quiet);
   margin: 0 auto;
   max-width: 80ch;
+  line-height: 1.25;
 }
 
-/* Page 1: 5x4 Target Logos Slide Grid */
+/* Page 1: 5x4 Target Logos Slide Grid — strictly fits 1 slide */
 .targets-slide-grid {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
-  gap: 0.75rem;
-  margin: 0.5rem 0;
-}
-
-@media (max-width: 1200px) {
-  .targets-slide-grid {
-    grid-template-columns: repeat(4, 1fr);
-  }
-}
-
-@media (max-width: 768px) {
-  .targets-slide-grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
+  grid-template-rows: repeat(4, 1fr);
+  gap: clamp(0.3rem, 0.8vh, 0.55rem);
+  flex: 1;
+  min-height: 0;
+  margin: 0.2rem 0;
 }
 
 .target-slide-card {
   background: var(--sheet);
   border: 1px solid var(--rule);
-  border-radius: 10px;
-  padding: 0.75rem 0.5rem;
+  border-radius: 8px;
+  padding: clamp(0.2rem, 0.6vh, 0.4rem) 0.35rem;
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
   text-align: center;
   cursor: pointer;
+  min-height: 0;
+  overflow: hidden;
   transition: transform 0.15s ease, border-color 0.15s ease, box-shadow 0.15s ease;
 }
 
 .target-slide-card:hover {
   transform: translateY(-2px);
   border-color: var(--forest);
-  box-shadow: 0 4px 14px color-mix(in srgb, var(--forest) 20%, transparent);
+  box-shadow: 0 4px 12px color-mix(in srgb, var(--forest) 20%, transparent);
 }
 
 .target-slide-logo {
-  width: 58px;
-  height: 58px;
+  width: clamp(30px, 5vh, 44px);
+  height: clamp(30px, 5vh, 44px);
   background: #ffffff;
   border: 1px solid var(--rule);
-  border-radius: 8px;
+  border-radius: 6px;
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 4px;
-  margin-bottom: 0.45rem;
+  padding: 2px;
+  margin-bottom: clamp(1px, 0.3vh, 3px);
+  flex-shrink: 0;
 }
 
 .target-slide-logo img {
@@ -282,46 +295,50 @@ button { font: inherit; }
 }
 
 .target-slide-name {
-  font-size: 0.84rem;
+  font-size: clamp(0.68rem, 1.05vh, 0.78rem);
   font-weight: 700;
   color: var(--ink);
-  line-height: 1.25;
-  margin-bottom: 0.2rem;
-  display: -webkit-box;
-  -webkit-line-clamp: 1;
-  -webkit-box-orient: vertical;
+  line-height: 1.15;
+  margin-bottom: 2px;
+  white-space: nowrap;
   overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 100%;
 }
 
 .target-slide-tag {
-  font-size: 0.7rem;
+  font-size: clamp(0.56rem, 0.85vh, 0.64rem);
   font-family: ui-monospace, monospace;
   color: var(--quiet);
   font-weight: 600;
+  line-height: 1;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 100%;
 }
 
-/* Page 2: 4x2 Categories Grid */
+/* Page 2: 4x2 Categories Grid — strictly fits 1 slide */
 .categories-slide-grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  gap: 0.85rem;
-  margin: 0.5rem 0;
-}
-
-@media (max-width: 1100px) {
-  .categories-slide-grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
+  grid-template-rows: repeat(2, 1fr);
+  gap: clamp(0.35rem, 0.9vh, 0.65rem);
+  flex: 1;
+  min-height: 0;
+  margin: 0.2rem 0;
 }
 
 .category-slide-box {
   background: var(--sheet);
   border: 1px solid var(--rule);
-  border-radius: 10px;
-  padding: 0.95rem;
+  border-radius: 8px;
+  padding: clamp(0.35rem, 0.9vh, 0.65rem);
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  min-height: 0;
+  overflow: hidden;
   transition: transform 0.15s ease, border-color 0.15s ease;
 }
 
@@ -333,85 +350,91 @@ button { font: inherit; }
 .category-slide-top {
   display: flex;
   align-items: center;
-  gap: 0.6rem;
-  margin-bottom: 0.45rem;
+  gap: 0.45rem;
+  margin-bottom: clamp(1px, 0.3vh, 3px);
+  flex-shrink: 0;
 }
 
 .category-slide-icon {
-  font-size: 1.4rem;
+  font-size: clamp(1.05rem, 1.8vh, 1.25rem);
   line-height: 1;
+  flex-shrink: 0;
 }
 
 .category-slide-top h3 {
-  font-size: 0.92rem;
+  font-size: clamp(0.78rem, 1.15vh, 0.88rem);
   font-weight: 800;
   color: var(--ink);
-  line-height: 1.2;
+  line-height: 1.15;
   margin: 0;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .category-badge-small {
-  font-size: 0.65rem;
+  font-size: 0.58rem;
   font-family: ui-monospace, monospace;
   font-weight: 700;
-  padding: 1px 6px;
+  padding: 1px 4px;
   border-radius: 999px;
   background: color-mix(in srgb, var(--forest) 18%, transparent);
   color: var(--forest);
   border: 1px solid var(--rule);
   display: inline-block;
-  margin-top: 2px;
+  line-height: 1;
 }
 
 .category-slide-desc {
-  font-size: 0.78rem;
+  font-size: clamp(0.66rem, 0.95vh, 0.74rem);
   color: var(--quiet);
-  line-height: 1.4;
-  margin-bottom: 0.5rem;
+  line-height: 1.3;
+  margin-bottom: clamp(1px, 0.3vh, 3px);
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
 }
 
 .category-slide-entities {
-  font-size: 0.72rem;
+  font-size: clamp(0.62rem, 0.9vh, 0.68rem);
   color: var(--forest);
   font-weight: 600;
   background: var(--paper);
-  padding: 3px 8px;
-  border-radius: 6px;
+  padding: 2px 5px;
+  border-radius: 4px;
   border: 1px solid var(--rule);
   display: block;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
   margin-top: auto;
+  flex-shrink: 0;
 }
 
-/* Page 3: 3x2 Attack Vectors Grid */
+/* Page 3: 3x2 Attack Vectors Grid — strictly fits 1 slide */
 .vectors-slide-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 0.9rem;
-  margin: 0.5rem 0;
-}
-
-@media (max-width: 1100px) {
-  .vectors-slide-grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
-
-@media (max-width: 640px) {
-  .vectors-slide-grid {
-    grid-template-columns: 1fr;
-  }
+  grid-template-rows: repeat(2, 1fr);
+  gap: clamp(0.35rem, 0.9vh, 0.65rem);
+  flex: 1;
+  min-height: 0;
+  margin: 0.2rem 0;
 }
 
 .vector-slide-box {
   background: var(--sheet);
   border: 1px solid var(--rule);
-  border-radius: 10px;
-  padding: 1rem;
+  border-radius: 8px;
+  padding: clamp(0.35rem, 0.9vh, 0.7rem);
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  position: relative;
+  min-height: 0;
   overflow: hidden;
+  position: relative;
+  transition: transform 0.15s ease, border-color 0.15s ease;
 }
 
 .vector-slide-box::before {
@@ -429,51 +452,68 @@ button { font: inherit; }
 }
 
 .vector-slide-box h3 {
-  font-size: 0.98rem;
+  font-size: clamp(0.8rem, 1.15vh, 0.9rem);
   font-weight: 800;
   color: var(--ink);
-  margin: 0 0 0.35rem 0;
+  margin: 0 0 1px 0;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  line-height: 1.2;
 }
 
 .vector-slide-actors {
-  font-size: 0.72rem;
+  font-size: clamp(0.6rem, 0.9vh, 0.66rem);
   font-family: ui-monospace, monospace;
   color: var(--quiet);
-  margin-bottom: 0.45rem;
+  margin-bottom: clamp(1px, 0.3vh, 3px);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  line-height: 1.1;
 }
 
 .vector-slide-how {
   background: color-mix(in srgb, var(--stamp) 8%, var(--paper));
   border: 1px solid color-mix(in srgb, var(--stamp) 25%, transparent);
-  border-radius: 6px;
-  padding: 0.5rem 0.65rem;
-  margin-bottom: 0.45rem;
+  border-radius: 5px;
+  padding: clamp(0.2rem, 0.5vh, 0.35rem) 0.45rem;
+  margin-bottom: clamp(1px, 0.3vh, 3px);
 }
 
 .vector-slide-how strong {
-  font-size: 0.72rem;
+  font-size: 0.62rem;
   color: var(--stamp);
   display: block;
   text-transform: uppercase;
   font-weight: 800;
+  line-height: 1.1;
 }
 
 .vector-slide-how p {
-  font-size: 0.78rem;
+  font-size: clamp(0.65rem, 0.92vh, 0.72rem);
   color: var(--ink);
-  line-height: 1.4;
-  margin: 2px 0 0;
+  line-height: 1.25;
+  margin: 1px 0 0;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
 }
 
 .vector-slide-fix {
-  font-size: 0.74rem;
+  font-size: clamp(0.62rem, 0.9vh, 0.68rem);
   color: var(--forest);
   background: var(--paper);
   border: 1px solid var(--rule);
-  padding: 4px 8px;
-  border-radius: 6px;
+  padding: 2px 5px;
+  border-radius: 4px;
   margin-top: auto;
-  line-height: 1.35;
+  line-height: 1.2;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  flex-shrink: 0;
 }
 
 /* Bottom Slide Navigation Bar */
@@ -484,23 +524,24 @@ button { font: inherit; }
   background: var(--sheet);
   border: 1px solid var(--rule);
   border-radius: 999px;
-  padding: 0.4rem 1.25rem;
-  margin-top: 0.75rem;
+  padding: 0.22rem 1rem;
+  margin-top: 0.2rem;
+  flex-shrink: 0;
 }
 
 .slide-nav-btn {
   background: transparent;
   border: 1px solid var(--forest);
   color: var(--forest);
-  padding: 5px 14px;
+  padding: 3px 12px;
   border-radius: 999px;
   font-weight: 700;
-  font-size: 0.82rem;
+  font-size: 0.74rem;
   cursor: pointer;
   text-decoration: none;
   display: inline-flex;
   align-items: center;
-  gap: 5px;
+  gap: 4px;
   transition: all 0.15s ease;
 }
 
@@ -512,12 +553,12 @@ button { font: inherit; }
 .slide-dots {
   display: flex;
   align-items: center;
-  gap: 8px;
+  gap: 6px;
 }
 
 .slide-dot {
-  width: 9px;
-  height: 9px;
+  width: 7px;
+  height: 7px;
   border-radius: 50%;
   background: var(--rule);
   transition: all 0.2s ease;
@@ -527,12 +568,12 @@ button { font: inherit; }
 
 .slide-dot.active {
   background: var(--forest);
-  width: 22px;
+  width: 18px;
   border-radius: 999px;
 }
 
 .slide-indicator-text {
-  font-size: 0.78rem;
+  font-size: 0.72rem;
   color: var(--quiet);
 }
 
