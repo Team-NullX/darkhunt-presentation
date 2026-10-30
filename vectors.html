@@ -3,510 +3,158 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Attack Vectors & Exploitation Methodologies — Project Dark Hunt Presentation</title>
+  <title>Slide 3: National Attack Vectors & Exploitation — Project Dark Hunt</title>
   <link rel="stylesheet" href="presentation.css">
   <link rel="icon" type="image/png" href="tnx-logo.png">
 </head>
-<body>
+<body style="overflow-x: hidden;">
 
-  <!-- Top Navigation Bar -->
-  <nav class="navbar">
-    <div class="container nav-container">
+  <!-- Minimal Top Header -->
+  <nav class="navbar" style="padding: 0.4rem 0;">
+    <div class="container nav-container" style="max-width: 1400px;">
       <a href="presentation.html" class="brand">
-        <span class="brand-badge">RESTRICTED</span>
+        <span class="brand-badge">RESTRICTED CTI</span>
         <div class="brand-text">
-          <h1>Project Dark Hunt</h1>
-          <p>Cyber Threat Intelligence Presentation // Team NullX</p>
+          <h1 style="font-size: 1.05rem;">Project Dark Hunt</h1>
+          <p style="font-size: 0.7rem;">Cyber Threat Intelligence Presentation // Team NullX</p>
         </div>
       </a>
 
       <div class="nav-links">
-        <a href="presentation.html" class="nav-link">Page 1: Target Sites (20)</a>
-        <a href="categories.html" class="nav-link">Page 2: Data Categories</a>
-        <a href="vectors.html" class="nav-link active">Page 3: Attack Vectors & Misuse</a>
-        <a href="Master_Cyber_Threat_Matrix_English.pdf" target="_blank" class="nav-link nav-pill-pdf">PDF Dossier 📥</a>
-        <button id="themeToggle" class="theme-toggle-btn" title="Toggle Light / Dark mode">☀️ Theme</button>
+        <a href="presentation.html" class="nav-link">Slide 1: Targets (20 Logos)</a>
+        <a href="categories.html" class="nav-link">Slide 2: Data Types</a>
+        <a href="vectors.html" class="nav-link active">Slide 3: Attack Vectors</a>
+        <a href="Master_Cyber_Threat_Matrix_English.pdf" target="_blank" class="nav-link nav-pill-pdf" style="padding: 3px 10px; font-size: 0.75rem;">PDF Dossier 📥</a>
+        <button id="themeToggle" class="theme-toggle-btn" style="padding: 3px 8px; font-size: 0.75rem;">☀️ Theme</button>
       </div>
     </div>
   </nav>
 
-  <!-- Main Body Content -->
-  <main class="container" style="flex: 1;">
+  <!-- Slide Viewport -->
+  <main class="slide-wrapper">
     
-    <!-- Hero / Header -->
-    <header class="page-hero">
-      <div class="hero-tag">Executive Presentation // Page 3 of 3</div>
-      <h2 class="hero-title">National Attack Vectors & Adversary Exploitation Methodologies</h2>
-      <p class="hero-desc">
-        Actionable cyber threat intelligence analysis demonstrating how threat actors, state-sponsored APTs, and underground ransomware syndicates weaponize compromised Bangladeshi data assets to inflict systemic national damage.
-      </p>
-
-      <div class="stat-pills">
-        <div class="stat-pill"><strong>6 Primary</strong> Attack Methodologies</div>
-        <div class="stat-pill"><strong>10+</strong> Cascading Exploit Vectors</div>
-        <div class="stat-pill"><strong>16</strong> Monitored Tor Cartels</div>
-        <div class="stat-pill" style="border-color: #ef4444; color: #fca5a5;"><strong>High Sovereign Risk</strong></div>
-        <div class="stat-pill" style="border-color: #10b981; color: #6ee7b7;"><strong>Tri-Partite</strong> Remediation</div>
-      </div>
+    <!-- Slide Header -->
+    <header class="slide-header">
+      <span class="slide-pill-badge">SLIDE 03 // EXPLOITATION METHODOLOGY</span>
+      <h2>National Attack Vectors: How Adversaries Exploit Bangladesh</h2>
+      <p>Technical playbooks illustrating how threat actors weaponize these leaks against national infrastructure and citizens</p>
     </header>
 
-    <!-- Visual Attack Lifecycle Banner -->
-    <section style="margin-bottom: 2.5rem;">
-      <div class="section-title-bar">
-        <h3>The Cyber Adversary Killchain & Misuse Pipeline</h3>
-        <p>Step-by-step progression from initial data harvesting to sovereign infrastructure compromise.</p>
-      </div>
+    <!-- 6 Attack Vectors 3x2 Presentation Grid -->
+    <section class="vectors-slide-grid">
 
-      <div class="killchain-grid">
-        <div class="killchain-step">
-          <span class="killchain-step-num">STAGE 01</span>
-          <h4>Perimeter Penetration</h4>
-          <p>Exploitation of unpatched web portals, unauthenticated APIs, and phished employee credentials across target perimeters.</p>
+      <!-- Vector 1: Sovereign Wire Fraud -->
+      <div class="vector-slide-box">
+        <div>
+          <h3>🏛️ 1. Sovereign Wire Fraud & Forgery</h3>
+          <div class="vector-slide-actors">TARGETS: Armed Forces Division, Navy, Police CID</div>
+          <div class="vector-slide-how">
+            <strong>Adversary Misuse Playbook:</strong>
+            <p>Attackers extract authentic military seals, officer signatures, and official dispatch numbers to forge equipment purchase orders and redirect state treasury wires to offshore accounts.</p>
+          </div>
         </div>
-        <div class="killchain-step">
-          <span class="killchain-step-num">STAGE 02</span>
-          <h4>Stealth Data Exfiltration</h4>
-          <p>Attackers siphon terabytes of citizen databases, military dockets, and banking files over encrypted C2 reverse tunnels to Tor staging servers.</p>
-        </div>
-        <div class="killchain-step">
-          <span class="killchain-step-num">STAGE 03</span>
-          <h4>Cross-Correlation & Weaponization</h4>
-          <p>Leaked records are indexed, matching citizen NID numbers with phone lists, corporate audit sheets with executive emails, and router configs with network topology.</p>
-        </div>
-        <div class="killchain-step">
-          <span class="killchain-step-num">STAGE 04</span>
-          <h4>National Exploitation</h4>
-          <p>Execution of fraudulent wire transfers, SIM-swap extortion, supply-chain software poisoning, and targeted blackouts.</p>
+        <div class="vector-slide-fix">
+          🛡️ <strong>Fix:</strong> Cryptographic PKI digital signing & multi-party out-of-band wire verification.
         </div>
       </div>
-    </section>
 
-    <!-- Detailed 6 Attack Vector Playbooks -->
-    <section>
-      <div class="section-title-bar">
-        <h3>In-Depth Exploitation Methodologies & Misuse Scenarios</h3>
-        <p>Detailed technical playbooks illustrating how adversaries target our country using specific leak artifacts.</p>
+      <!-- Vector 2: Infrastructure Sabotage -->
+      <div class="vector-slide-box">
+        <div>
+          <h3>⚡ 2. Infrastructure & SCADA Blackout</h3>
+          <div class="vector-slide-actors">TARGETS: Flora Limited (Govt IT), tdotnet (BGP), Confidence</div>
+          <div class="vector-slide-how">
+            <strong>Adversary Misuse Playbook:</strong>
+            <p>Adversaries compromise Flora IT developer credentials to poison ministry software updates, and hijack tdotnet BGP gateway routing to knock out power grid monitoring and banking.</p>
+          </div>
+        </div>
+        <div class="vector-slide-fix">
+          🛡️ <strong>Fix:</strong> Air-gap power SCADA networks; enforce RPKI route validation on all telco gateways.
+        </div>
       </div>
 
-      <!-- Playbook 1: Sovereign Impersonation -->
-      <article class="vector-card">
-        <div class="vector-header">
-          <div class="vector-title-block">
-            <h3>Methodology 01: Sovereign Impersonation & Diplomatic / Military Procurement Fraud</h3>
-            <p>Weaponizing official defense letterheads, officer signatures, and police seals for fraudulent state authorizations.</p>
-          </div>
-          <div class="vector-meta">
-            <span class="badge badge-critical">CRITICAL THREAT</span>
-            <span class="badge" style="background: rgba(99, 102, 241, 0.15); color: #a5b4fc; border: 1px solid #6366f1;">APT & Cybercartel</span>
+      <!-- Vector 3: Banking Spear-Phishing -->
+      <div class="vector-slide-box vector-warning">
+        <div>
+          <h3>🎯 3. Corporate Banking Spear-Phishing</h3>
+          <div class="vector-slide-actors">TARGETS: The City Bank, Bank Asia, Agrani Bank PLC</div>
+          <div class="vector-slide-how">
+            <strong>Adversary Misuse Playbook:</strong>
+            <p>Ransomware cartels study leaked corporate credit audits to craft hyper-contextual spear-phishing emails to branch managers, deploying ransomware that paralyzes core banking servers.</p>
           </div>
         </div>
+        <div class="vector-slide-fix">
+          🛡️ <strong>Fix:</strong> FIDO2 hardware MFA for all bank managers; immutable air-gapped off-site backups.
+        </div>
+      </div>
 
-        <p style="font-size: 0.9rem; color: var(--text-muted); line-height: 1.5;">
-          <strong>Compromised Intelligence Assets:</strong> Leaked internal circulars, official seals, and officer personnel dossiers from <strong>Armed Forces Division (AFD)</strong>, <strong>Bangladesh Navy</strong>, and <strong>Bangladesh Police HQ/CID</strong>.
-        </p>
-
-        <div class="killchain-grid" style="margin-top: 1rem;">
-          <div class="killchain-step">
-            <span class="killchain-step-num">STEP 1: ASSET HARVESTING</span>
-            <h4>Extracting Official Artifacts</h4>
-            <p>Attackers extract high-resolution departmental insignias, authentic dispatch reference numbering schemas, and officer signature blocks from leaked PDF attachments.</p>
-          </div>
-          <div class="killchain-step">
-            <span class="killchain-step-num">STEP 2: FORGED AUTHORIZATION</span>
-            <h4>Crafting Diplomatic Communiqués</h4>
-            <p>Adversaries forge authentic-looking emergency procurement requests sent to international defense contractors and foreign embassies, requesting high-value hardware.</p>
-          </div>
-          <div class="killchain-step">
-            <span class="killchain-step-num">STEP 3: WIRE FRAUD EXECUTION</span>
-            <h4>Diverting State Funds</h4>
-            <p>Using compromised internal email domains or spoofed executive headers, attackers instruct partner foreign banks to redirect multi-million dollar defense contract payments to offshore escrow accounts.</p>
+      <!-- Vector 4: Mass Identity Theft -->
+      <div class="vector-slide-box">
+        <div>
+          <h3>📱 4. Mass SIM-Swap & Wallet Hijacking</h3>
+          <div class="vector-slide-actors">TARGETS: ECS / NID (120M), Shwapno (410 GB), RabbitBD</div>
+          <div class="vector-slide-how">
+            <strong>Adversary Misuse Playbook:</strong>
+            <p>Syndicates match 120M citizen NID details with retail customer mobile numbers, bypassing telco verification to execute SIM swaps, intercept SMS OTPs, and loot bKash/Nagad accounts.</p>
           </div>
         </div>
-
-        <div class="misuse-box">
-          <h4>🚨 Real-World Misuse & Consequences for Bangladesh:</h4>
-          <p>
-            • Severe diplomatic embarrassment and loss of trust with international military suppliers and foreign allies.<br>
-            • Substantial financial drain on national treasury through fraudulent procurement contracts.<br>
-            • Disclosure of confidential military readiness and warship patrol frequencies to foreign intelligence services.
-          </p>
+        <div class="vector-slide-fix">
+          🛡️ <strong>Fix:</strong> Eliminate SMS OTP for PIN resets; mandate biometric liveness scan for duplicate SIMs.
         </div>
+      </div>
 
-        <div class="countermeasure-box">
-          <h4>🛡️ Counter-Exploitation Strategy:</h4>
-          <p>Implement mandatory asymmetric PKI digital signing (X.509) for all defense dispatch documents; mandate multi-party out-of-band verification for any international sovereign fund transfer above $50,000 USD.</p>
-        </div>
-      </article>
-
-      <!-- Playbook 2: Critical Infrastructure Sabotage -->
-      <article class="vector-card">
-        <div class="vector-header">
-          <div class="vector-title-block">
-            <h3>Methodology 02: Critical Infrastructure Sabotage & Regional Blackout Cascades</h3>
-            <p>Poisoning government IT supply chains and manipulating core BGP routing gateways to induce localized blackouts.</p>
-          </div>
-          <div class="vector-meta">
-            <span class="badge badge-critical">CRITICAL THREAT</span>
-            <span class="badge" style="background: rgba(239, 68, 68, 0.15); color: #fca5a5; border: 1px solid #ef4444;">Destructive APT</span>
+      <!-- Vector 5: Diplomatic & VIP Surveillance -->
+      <div class="vector-slide-box vector-warning">
+        <div>
+          <h3>✈️ 5. VIP Surveillance & Border Evasion</h3>
+          <div class="vector-slide-actors">TARGETS: Biman Bangladesh, NovoAir, Malindo Air</div>
+          <div class="vector-slide-how">
+            <strong>Adversary Misuse Playbook:</strong>
+            <p>Foreign intelligence agencies track flight itineraries, passport numbers, and seat assignments of defense officials and diplomats abroad, while criminals clone booking records to evade watchlists.</p>
           </div>
         </div>
+        <div class="vector-slide-fix">
+          🛡️ <strong>Fix:</strong> End-to-end tokenization of airline PNR data; segregated VIP travel channels.
+        </div>
+      </div>
 
-        <p style="font-size: 0.9rem; color: var(--text-muted); line-height: 1.5;">
-          <strong>Compromised Intelligence Assets:</strong> Internal developer tokens and software repositories from <strong>Flora Limited (Strategic Govt IT Vendor)</strong>, edge router configuration files from <strong>tdotnet</strong>, and power generation distribution maps from <strong>Confidence Group</strong>.
-        </p>
-
-        <div class="killchain-grid" style="margin-top: 1rem;">
-          <div class="killchain-step">
-            <span class="killchain-step-num">STEP 1: SUPPLY-CHAIN POISONING</span>
-            <h4>Compromising Vendor Build Pipelines</h4>
-            <p>Adversaries use leaked Flora Limited developer credentials to insert stealthy trojanized backdoors into regular software maintenance updates dispatched to ministries and state agencies.</p>
-          </div>
-          <div class="killchain-step">
-            <span class="killchain-step-num">STEP 2: BGP ROUTE HIJACKING</span>
-            <h4>Blackholing National Gateways</h4>
-            <p>Utilizing leaked core router configuration scripts and peering passwords from tdotnet, attackers alter Autonomous System (AS) routing tables, redirecting or severing national internet traffic.</p>
-          </div>
-          <div class="killchain-step">
-            <span class="killchain-step-num">STEP 3: SCADA TAMPERING</span>
-            <h4>Disrupting Energy Substations</h4>
-            <p>Attackers correlate leaked industrial architecture diagrams from Confidence Group to send malicious commands to programmable logic controllers (PLCs), tripping breakers in industrial belts.</p>
+      <!-- Vector 6: Tor Double Extortion Cartels -->
+      <div class="vector-slide-box">
+        <div>
+          <h3>💀 6. Darknet Double Extortion Pipeline</h3>
+          <div class="vector-slide-actors">TARGETS: All 20 Targets Across 16 Tor Hidden Services</div>
+          <div class="vector-slide-how">
+            <strong>Adversary Misuse Playbook:</strong>
+            <p>Initial access brokers sell network credentials; ransomware gangs exfiltrate databases and publish countdown auctions on Tor leak blogs, creating permanent darknet exposure.</p>
           </div>
         </div>
-
-        <div class="misuse-box">
-          <h4>🚨 Real-World Misuse & Consequences for Bangladesh:</h4>
-          <p>
-            • Cascading power outages across critical industrial zones, crippling garments manufacturing and national export productivity.<br>
-            • Paralysis of inter-bank ATM and electronic fund transfer networks due to telecom gateway blackouts.<br>
-            • Complete loss of government control over core ministerial IT portals via poisoned vendor software.
-          </p>
+        <div class="vector-slide-fix">
+          🛡️ <strong>Fix:</strong> Proactive automated darknet CTI scraping; mandatory 72-hour breach disclosure laws.
         </div>
-
-        <div class="countermeasure-box">
-          <h4>🛡️ Counter-Exploitation Strategy:</h4>
-          <p>Air-gap all national SCADA and power monitoring networks; enforce RPKI cryptographic route validation across all Bangladesh telecom gateways; mandate continuous binary code signing and third-party penetration testing for all vendors.</p>
-        </div>
-      </article>
-
-      <!-- Playbook 3: Corporate Banking Spear-Phishing -->
-      <article class="vector-card vector-high">
-        <div class="vector-header">
-          <div class="vector-title-block">
-            <h3>Methodology 03: Executive Spear-Phishing & Commercial Banking Manipulation</h3>
-            <p>Weaponizing internal corporate risk audits and board meeting minutes for hyper-targeted executive manipulation.</p>
-          </div>
-          <div class="vector-meta">
-            <span class="badge badge-high">HIGH THREAT</span>
-            <span class="badge" style="background: rgba(245, 158, 11, 0.15); color: #fcd34d; border: 1px solid #f59e0b;">Ransomware Cartel</span>
-          </div>
-        </div>
-
-        <p style="font-size: 0.9rem; color: var(--text-muted); line-height: 1.5;">
-          <strong>Compromised Intelligence Assets:</strong> Corporate loan portfolio risk assessments, executive board minutes, and audit memos from <strong>The City Bank</strong>, <strong>Bank Asia</strong>, and <strong>Agrani Bank PLC</strong>.
-        </p>
-
-        <div class="killchain-grid" style="margin-top: 1rem;">
-          <div class="killchain-step">
-            <span class="killchain-step-num">STEP 1: AUDIT RECONNAISSANCE</span>
-            <h4>Parsing Financial Risk Sheets</h4>
-            <p>Attackers study leaked internal credit risk sheets to identify high-value corporate borrowers with sensitive upcoming refinancing deadlines and pending multi-million dollar loan renewals.</p>
-          </div>
-          <div class="killchain-step">
-            <span class="killchain-step-num">STEP 2: HYPER-CONTEXTUAL SPEAR-PHISHING</span>
-            <h4>Spoofing Board Resolutions</h4>
-            <p>Using authentic internal letter formats and actual names of executive committee members, attackers send weaponized PDF audit reports with embedded malware to branch managers.</p>
-          </div>
-          <div class="killchain-step">
-            <span class="killchain-step-num">STEP 3: DOUBLE EXTORTION ATTACK</span>
-            <h4>Lockout & Extortion Demand</h4>
-            <p>Upon initial foothold, attackers deploy ransomware to encrypt core banking loan database servers, threatening to release corporate borrower non-performing loan (NPL) documents publicly on Tor unless a ransom is paid.</p>
-          </div>
-        </div>
-
-        <div class="misuse-box">
-          <h4>🚨 Real-World Misuse & Consequences for Bangladesh:</h4>
-          <p>
-            • Widespread panic among commercial banking clients and potential bank runs if borrower credit assessments are leaked.<br>
-            • Catastrophic reputational collapse and downgrade of international credit ratings for major private banks.<br>
-            • Unplanned business shutdowns caused by encrypted internal operational files.
-          </p>
-        </div>
-
-        <div class="countermeasure-box">
-          <h4>🛡️ Counter-Exploitation Strategy:</h4>
-          <p>Deploy hardware security keys (FIDO2/WebAuthn) for all bank executive and manager accounts; mandate immutable, air-gapped off-site backups; enforce strict external email banner warnings and automated attachment sandboxing.</p>
-        </div>
-      </article>
-
-      <!-- Playbook 4: Mass Citizen Identity Theft -->
-      <article class="vector-card">
-        <div class="vector-header">
-          <div class="vector-title-block">
-            <h3>Methodology 04: Mass Citizen Identity Theft & Mobile Financial (bKash/Nagad) Hijacking</h3>
-            <p>Correlating 120M national identity records with retail mobile lists for automated SIM swapping and wallet draining.</p>
-          </div>
-          <div class="vector-meta">
-            <span class="badge badge-critical">CRITICAL THREAT</span>
-            <span class="badge" style="background: rgba(239, 68, 68, 0.15); color: #fca5a5; border: 1px solid #ef4444;">Cybercrime Syndicates</span>
-          </div>
-        </div>
-
-        <p style="font-size: 0.9rem; color: var(--text-muted); line-height: 1.5;">
-          <strong>Compromised Intelligence Assets:</strong> 120M+ voter & citizen records from <strong>ECS / NID Wing</strong>, cross-referenced with 410 GB of customer mobile phone numbers from <strong>Shwapno Superstore (ACI)</strong> and <strong>RabbitBD</strong>.
-        </p>
-
-        <div class="killchain-grid" style="margin-top: 1rem;">
-          <div class="killchain-step">
-            <span class="killchain-step-num">STEP 1: DATA CROSS-INDEXING</span>
-            <h4>Building Comprehensive Citizen Profiles</h4>
-            <p>Cybercrime rings write automated scripts to match phone numbers leaked from retail purchase databases (Shwapno) with exact NID numbers, mothers' names, and birth dates from the NID leak.</p>
-          </div>
-          <div class="killchain-step">
-            <span class="killchain-step-num">STEP 2: TELECOM SIM-SWAP ATTACK</span>
-            <h4>Bypassing Telco Verification</h4>
-            <p>Fraudsters contact mobile network operator customer care agents or corrupt local SIM retail agents, answering all biometric verification questions perfectly using the victim's leaked NID profile.</p>
-          </div>
-          <div class="killchain-step">
-            <span class="killchain-step-num">STEP 3: MFS WALLET TAKEOVER</span>
-            <h4>Interception of SMS OTPs</h4>
-            <p>Once the victim's SIM card is re-issued, attackers request PIN resets on bKash, Nagad, and digital banking apps, intercepting SMS OTPs to drain citizen funds in minutes.</p>
-          </div>
-        </div>
-
-        <div class="misuse-box">
-          <h4>🚨 Real-World Misuse & Consequences for Bangladesh:</h4>
-          <p>
-            • Millions of general citizens exposed to unauthorized personal loans taken out in their names.<br>
-            • Devastating financial loss for middle-class and rural families through systematic mobile wallet looting.<br>
-            • Severe public erosion of trust in national digital governance and digital financial inclusion initiatives.
-          </p>
-        </div>
-
-        <div class="countermeasure-box">
-          <h4>🛡️ Counter-Exploitation Strategy:</h4>
-          <p>Immediately eliminate SMS OTP as the sole authentication factor for MFS PIN resets; mandate in-person or live liveness-verified biometric facial scanning for duplicate SIM card issuance; implement zero-knowledge tokenized NID lookup APIs.</p>
-        </div>
-      </article>
-
-      <!-- Playbook 5: Aviation & VIP Tracking -->
-      <article class="vector-card vector-high">
-        <div class="vector-header">
-          <div class="vector-title-block">
-            <h3>Methodology 05: VIP Surveillance, Espionage & Border Control Infiltration</h3>
-            <p>Leveraging commercial aviation passenger records and flight crew rosters for targeted physical and digital surveillance.</p>
-          </div>
-          <div class="vector-meta">
-            <span class="badge badge-high">HIGH THREAT</span>
-            <span class="badge" style="background: rgba(6, 182, 212, 0.15); color: #67e8f9; border: 1px solid #06b6d4;">Foreign Espionage</span>
-          </div>
-        </div>
-
-        <p style="font-size: 0.9rem; color: var(--text-muted); line-height: 1.5;">
-          <strong>Compromised Intelligence Assets:</strong> Passenger Name Records (PNR), passport details, and flight manifests from <strong>Biman Bangladesh Airlines</strong>, <strong>NovoAir</strong>, and <strong>Malindo Air</strong>.
-        </p>
-
-        <div class="killchain-grid" style="margin-top: 1rem;">
-          <div class="killchain-step">
-            <span class="killchain-step-num">STEP 1: MANIFEST HARVESTING</span>
-            <h4>Filtering High-Profile Travelers</h4>
-            <p>Adversaries filter through hundreds of thousands of leaked flight records to identify travel patterns of senior military officials, government secretaries, and diplomatic delegations.</p>
-          </div>
-          <div class="killchain-step">
-            <span class="killchain-step-num">STEP 2: TARGETED INTERCEPTION</span>
-            <h4>Staging Foreign Espionage</h4>
-            <p>Armed with exact flight dates, hotel bookings, and passport numbers, foreign intelligence operatives conduct targeted surveillance, plant malware on hotel Wi-Fi networks, or tap mobile devices abroad.</p>
-          </div>
-          <div class="killchain-step">
-            <span class="killchain-step-num">STEP 3: BORDER EVASION</span>
-            <h4>Creating Synthetic Travel Identities</h4>
-            <p>Transnational criminal networks use valid leaked passenger ticketing records to clone legitimate travel booking confirmations, helping fugitives bypass automated international immigration watchlists.</p>
-          </div>
-        </div>
-
-        <div class="misuse-box">
-          <h4>🚨 Real-World Misuse & Consequences for Bangladesh:</h4>
-          <p>
-            • Compromise of sensitive bilateral diplomatic missions and state trade negotiations.<br>
-            • Serious physical and cyber safety threats to Bangladeshi senior officials traveling overseas.<br>
-            • Degradation of international aviation security compliance (ICAO audit warnings).
-          </p>
-        </div>
-
-        <div class="countermeasure-box">
-          <h4>🛡️ Counter-Exploitation Strategy:</h4>
-          <p>Enforce end-to-end tokenization and encryption of all PNR databases; mandate secure, dedicated government VIP travel booking channels segregated from commercial reservation engines.</p>
-        </div>
-      </article>
-
-      <!-- Playbook 6: Dark Web Double Extortion Pipeline -->
-      <article class="vector-card">
-        <div class="vector-header">
-          <div class="vector-title-block">
-            <h3>Methodology 06: Dark Web Double Extortion Pipeline & Underground Auction Lifecycle</h3>
-            <p>Understanding the business model of Tor extortion cartels, public shaming blogs, and secondary black-market auctions.</p>
-          </div>
-          <div class="vector-meta">
-            <span class="badge badge-critical">CRITICAL THREAT</span>
-            <span class="badge" style="background: rgba(239, 68, 68, 0.15); color: #fca5a5; border: 1px solid #ef4444;">Cartel Extortion</span>
-          </div>
-        </div>
-
-        <p style="font-size: 0.9rem; color: var(--text-muted); line-height: 1.5;">
-          <strong>Compromised Intelligence Assets:</strong> Multi-terabyte database archives mirrored across <strong>16 monitored Tor hidden services</strong>, including LockBit 3.0, RansomHub, Kraken, and specialized breach broker channels.
-        </p>
-
-        <div class="killchain-grid" style="margin-top: 1rem;">
-          <div class="killchain-step">
-            <span class="killchain-step-num">PHASE 1: INITIAL BROKER SALE</span>
-            <h4>Perimeter Access Auctions</h4>
-            <p>Initial Access Brokers (IABs) discover unpatched vulnerabilities or VPN logins on Bangladeshi targets, selling root access on Russian-language underground forums for $2,000 to $10,000 USD.</p>
-          </div>
-          <div class="killchain-step">
-            <span class="killchain-step-num">PHASE 2: CARTEL EXFILTRATION</span>
-            <h4>Silent Infiltration & Staging</h4>
-            <p>Major ransomware cartels purchase access, maintain persistent dwell time of 30-90 days, map the entire Active Directory forest, and exfiltrate all databases before deploying any encryptor.</p>
-          </div>
-          <div class="killchain-step">
-            <span class="killchain-step-num">PHASE 3: SHAMING & TOR AUCTION</span>
-            <h4>Public Extortion Campaign</h4>
-            <p>Cartels post target logos and sample screenshots on Tor leak portals with a 14-day countdown. If ransom demands are ignored, datasets are packaged into permanent public torrents.</p>
-          </div>
-        </div>
-
-        <div class="misuse-box">
-          <h4>🚨 Real-World Misuse & Consequences for Bangladesh:</h4>
-          <p>
-            • Permanent, irreversible availability of national identity and commercial records on darknet forums worldwide.<br>
-            • Inability of victims to contain leaks once mirror copies are distributed across hundreds of global cyber syndicates.<br>
-            • Repeated extortion demands from copycat threat actors recycling old breach archives.
-          </p>
-        </div>
-
-        <div class="countermeasure-box">
-          <h4>🛡️ Counter-Exploitation Strategy:</h4>
-          <p>Deploy continuous automated CTI dark web scraping to detect initial breach broker listings before encryption occurs; mandate prompt public transparency and breach disclosure protocols under national cyber regulatory oversight.</p>
-        </div>
-      </article>
+      </div>
 
     </section>
 
-    <!-- Tri-Partite National Defense Blueprint Summary -->
-    <section style="margin-top: 3rem; margin-bottom: 3rem;">
-      <div class="section-title-bar">
-        <h3>Tri-Partite Sovereign Defense & Remediation Framework</h3>
-        <p>Three coordinated pillars required to neutralize these attack vectors immediately.</p>
+    <!-- Bottom Slide Controls -->
+    <footer class="slide-navbar">
+      <div class="slide-indicator-text">
+        <span>Team NullX CTI</span> • <span style="color: var(--accent-rose);">6 Exploitation Playbooks & National Defense</span>
       </div>
 
-      <div class="defense-grid">
-        <article class="defense-card">
-          <div class="defense-card-header">
-            <div class="defense-icon-box" style="color: #3b82f6;">🛡️</div>
-            <div class="defense-card-title">
-              <h3>National CERT / BGD e-GOV CIRT</h3>
-              <p>National Policy, Incident Coordination & Threat Feeds</p>
-            </div>
-          </div>
-          <ul class="defense-step-list">
-            <li class="defense-step-item">
-              <span class="defense-step-num">1</span>
-              <div class="defense-step-content">
-                <strong>Mandatory Active Directory Credential Resets</strong>
-                <p>Enforce domain password resets across all government agencies and mandate FIDO2 hardware MFA on all administrative consoles.</p>
-              </div>
-            </li>
-            <li class="defense-step-item">
-              <span class="defense-step-num">2</span>
-              <div class="defense-step-content">
-                <strong>Zero-Knowledge Identity Verification APIs</strong>
-                <p>Deprecate raw NID query endpoints; require tokenized verification for commercial banks and telcos.</p>
-              </div>
-            </li>
-          </ul>
-        </article>
-
-        <article class="defense-card">
-          <div class="defense-card-header">
-            <div class="defense-icon-box" style="color: #10b981;">⚡</div>
-            <div class="defense-card-title">
-              <h3>KPI Critical Infrastructure Operators</h3>
-              <p>Perimeter Defense, Zero-Trust & Supply Chain Audits</p>
-            </div>
-          </div>
-          <ul class="defense-step-list">
-            <li class="defense-step-item">
-              <span class="defense-step-num">1</span>
-              <div class="defense-step-content">
-                <strong>Micro-Segmentation & SCADA Air-Gapping</strong>
-                <p>Isolate operational technology (OT) from corporate IT networks to prevent lateral ransomware spread.</p>
-              </div>
-            </li>
-            <li class="defense-step-item">
-              <span class="defense-step-num">2</span>
-              <div class="defense-step-content">
-                <strong>Third-Party Vendor SAST/DAST Audits</strong>
-                <p>Subject all IT vendor deliverables (e.g. Flora Limited) to rigorous source-code audits prior to production deployment.</p>
-              </div>
-            </li>
-          </ul>
-        </article>
-
-        <article class="defense-card">
-          <div class="defense-card-header">
-            <div class="defense-icon-box" style="color: #f59e0b;">⚖️</div>
-            <div class="defense-card-title">
-              <h3>Law Enforcement & Regulators</h3>
-              <p>Cybercrime Prosecutions, SIM Regulations & Breach Laws</p>
-            </div>
-          </div>
-          <ul class="defense-step-list">
-            <li class="defense-step-item">
-              <span class="defense-step-num">1</span>
-              <div class="defense-step-content">
-                <strong>Biometric Re-Verification for Telco Re-Issuance</strong>
-                <p>Enact strict criminal penalties for SIM-swap fraud and mandate live biometric liveness verification.</p>
-              </div>
-            </li>
-            <li class="defense-step-item">
-              <span class="defense-step-num">2</span>
-              <div class="defense-step-content">
-                <strong>Mandatory Breach Notification Laws</strong>
-                <p>Enforce mandatory 72-hour breach disclosure requirements on banks and state enterprises with regulatory penalties for concealment.</p>
-              </div>
-            </li>
-          </ul>
-        </article>
+      <div class="slide-dots">
+        <a href="presentation.html" class="slide-dot" title="Slide 1"></a>
+        <a href="categories.html" class="slide-dot" title="Slide 2"></a>
+        <a href="vectors.html" class="slide-dot active" title="Slide 3"></a>
       </div>
-    </section>
+
+      <div style="display: flex; gap: 0.5rem; align-items: center;">
+        <span style="font-size: 0.72rem; color: var(--text-dim); margin-right: 0.5rem;">[Use ← / → Arrow Keys]</span>
+        <a href="categories.html" class="slide-nav-btn">◀ Prev: Data Types</a>
+        <a href="presentation.html" class="slide-nav-btn">Restart Slide 1 ↺</a>
+      </div>
+    </footer>
 
   </main>
-
-  <!-- Footer -->
-  <footer class="app-footer">
-    <div class="container footer-content">
-      <div>
-        <strong style="color: var(--text-main); font-size: 0.9rem;">Project Dark Hunt</strong>
-        <p>A non-speculative empirical Cyber Threat Intelligence inquiry by Team NullX.</p>
-        <div class="team-members">
-          <div class="team-member-item">
-            <span class="team-member-role">Project Lead & Planning</span>
-            <span class="team-member-name">Rahat Sahriar Rafi</span>
-          </div>
-          <div class="team-member-item">
-            <span class="team-member-role">Website Development & Evidence</span>
-            <span class="team-member-name">Md. Tanjim Islam</span>
-          </div>
-          <div class="team-member-item">
-            <span class="team-member-role">Evidence Verification</span>
-            <span class="team-member-name">MD Rakib Hasan Apon</span>
-          </div>
-        </div>
-      </div>
-      <div style="text-align: right;">
-        <span class="badge badge-critical" style="margin-bottom: 0.5rem;">RESTRICTED CTI ARCHIVE</span>
-        <p>Classification: Lawful Passive OSINT // Redacted Citizen PII</p>
-      </div>
-    </div>
-  </footer>
 
   <script src="presentation.js"></script>
 </body>

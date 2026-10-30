@@ -3,77 +3,206 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Target Inventory & Logos — Project Dark Hunt Presentation</title>
+  <title>Slide 1: Compromised Target Sites (20) — Project Dark Hunt</title>
   <link rel="stylesheet" href="presentation.css">
   <link rel="icon" type="image/png" href="tnx-logo.png">
 </head>
-<body>
+<body style="overflow-x: hidden;">
 
-  <!-- Top Navigation Bar -->
-  <nav class="navbar">
-    <div class="container nav-container">
+  <!-- Minimal Top Header -->
+  <nav class="navbar" style="padding: 0.4rem 0;">
+    <div class="container nav-container" style="max-width: 1400px;">
       <a href="presentation.html" class="brand">
-        <span class="brand-badge">RESTRICTED</span>
+        <span class="brand-badge">RESTRICTED CTI</span>
         <div class="brand-text">
-          <h1>Project Dark Hunt</h1>
-          <p>Cyber Threat Intelligence Presentation // Team NullX</p>
+          <h1 style="font-size: 1.05rem;">Project Dark Hunt</h1>
+          <p style="font-size: 0.7rem;">Cyber Threat Intelligence Presentation // Team NullX</p>
         </div>
       </a>
 
       <div class="nav-links">
-        <a href="presentation.html" class="nav-link active">Page 1: Target Sites (20)</a>
-        <a href="categories.html" class="nav-link">Page 2: Data Categories</a>
-        <a href="vectors.html" class="nav-link">Page 3: Attack Vectors & Misuse</a>
-        <a href="Master_Cyber_Threat_Matrix_English.pdf" target="_blank" class="nav-link nav-pill-pdf">PDF Dossier 📥</a>
-        <button id="themeToggle" class="theme-toggle-btn" title="Toggle Light / Dark mode">☀️ Theme</button>
+        <a href="presentation.html" class="nav-link active">Slide 1: Targets (20 Logos)</a>
+        <a href="categories.html" class="nav-link">Slide 2: Data Types</a>
+        <a href="vectors.html" class="nav-link">Slide 3: Attack Vectors</a>
+        <a href="Master_Cyber_Threat_Matrix_English.pdf" target="_blank" class="nav-link nav-pill-pdf" style="padding: 3px 10px; font-size: 0.75rem;">PDF Dossier 📥</a>
+        <button id="themeToggle" class="theme-toggle-btn" style="padding: 3px 8px; font-size: 0.75rem;">☀️ Theme</button>
       </div>
     </div>
   </nav>
 
-  <!-- Main Body Content -->
-  <main class="container" style="flex: 1;">
+  <!-- Slide Viewport -->
+  <main class="slide-wrapper">
     
-    <!-- Hero / Header -->
-    <header class="page-hero">
-      <div class="hero-tag">Executive Presentation // Page 1 of 3</div>
-      <h2 class="hero-title">Monitored Target Entities & Visual Identity Ledger</h2>
-      <p class="hero-desc">
-        Comprehensive catalog of all 20 critical organizations, government agencies, state enterprises, and commercial institutions verified under Project Dark Hunt's dual-proof criteria (Visual Screenshot Evidence + Dark Web Tor .onion Origin).
-      </p>
-
-      <div class="stat-pills">
-        <div class="stat-pill"><strong>20</strong> Verified Target Organizations</div>
-        <div class="stat-pill"><strong>40</strong> Visual Evidence Files (<span style="font-family: var(--font-mono);">EVD-001 - EVD-040</span>)</div>
-        <div class="stat-pill"><strong>16</strong> Dark Web Tor .onion Sources</div>
-        <div class="stat-pill"><strong>7</strong> National Critical Sectors</div>
-        <div class="stat-pill" style="border-color: #ef4444; color: #fca5a5;"><strong>6 Critical</strong> Severity Targets</div>
-      </div>
+    <!-- Slide Header -->
+    <header class="slide-header">
+      <span class="slide-pill-badge">SLIDE 01 // TARGET DIRECTORY</span>
+      <h2>Compromised Target Entities & Official Logos</h2>
+      <p>Verified institutions with confirmed data leaks across dark web Tor .onion repositories</p>
     </header>
 
-    <!-- Controls Bar -->
-    <section class="controls-bar">
-      <div class="search-input-group">
-        <span class="search-icon">🔍</span>
-        <input type="text" id="targetSearchInput" placeholder="Search target name, sector, KPI ID, evidence..." aria-label="Search Targets">
+    <!-- 20 Target Logos 5x4 Grid -->
+    <section class="targets-slide-grid" id="targetsSlideGrid">
+      
+      <!-- #01 Biman -->
+      <div class="target-slide-card" onclick="openTargetModal(1)">
+        <div class="target-slide-logo"><img src="assets/logos/biman-bangladesh.png" alt="Biman Bangladesh"></div>
+        <div class="target-slide-name">Biman Bangladesh Airlines</div>
+        <div class="target-slide-tag">KPI-10 • AVIATION</div>
       </div>
 
-      <div class="filter-btn-group" id="sectorFilterGroup">
-        <button class="filter-btn active" data-sector="ALL">All Sectors (20)</button>
-        <button class="filter-btn" data-sector="Defense & Law Enforcement">Defense & LE (3)</button>
-        <button class="filter-btn" data-sector="Banking & Finance">Banking & Finance (4)</button>
-        <button class="filter-btn" data-sector="Aviation & Transport">Aviation (3)</button>
-        <button class="filter-btn" data-sector="Civil Identity">Identity (1)</button>
-        <button class="filter-btn" data-sector="Retail & Commerce">Retail / Com (2)</button>
-        <button class="filter-btn" data-sector="Telecom & Utilities">Telecom & Power (3)</button>
-        <button class="filter-btn" data-sector="Healthcare & Academia">Health / Edu (2)</button>
-        <button class="filter-btn" data-sector="IT Vendor">IT Vendor (2)</button>
+      <!-- #02 Agrani Bank -->
+      <div class="target-slide-card" onclick="openTargetModal(2)">
+        <div class="target-slide-logo"><img src="assets/logos/agrani_bank_official_square.png" alt="Agrani Bank"></div>
+        <div class="target-slide-name">Agrani Bank PLC</div>
+        <div class="target-slide-tag">KPI-06 • STATE BANK</div>
       </div>
+
+      <!-- #03 Bangladesh Police -->
+      <div class="target-slide-card" onclick="openTargetModal(3)">
+        <div class="target-slide-logo"><img src="assets/logos/bangladesh_police_official.png" alt="Bangladesh Police"></div>
+        <div class="target-slide-name">Bangladesh Police (HQ/CID)</div>
+        <div class="target-slide-tag">KPI-41 • LAW ENFORCE</div>
+      </div>
+
+      <!-- #04 Bangladesh Navy -->
+      <div class="target-slide-card" onclick="openTargetModal(4)">
+        <div class="target-slide-logo"><img src="assets/logos/bangladesh_navy_square.png" alt="Bangladesh Navy"></div>
+        <div class="target-slide-name">Bangladesh Navy</div>
+        <div class="target-slide-tag">KPI-43 • DEFENSE</div>
+      </div>
+
+      <!-- #05 Popular Life Insurance -->
+      <div class="target-slide-card" onclick="openTargetModal(5)">
+        <div class="target-slide-logo"><img src="assets/logos/popular_life_official_square.png" alt="Popular Life Insurance"></div>
+        <div class="target-slide-name">Popular Life Insurance</div>
+        <div class="target-slide-tag">FINANCIAL • INSURANCE</div>
+      </div>
+
+      <!-- #06 The City Bank -->
+      <div class="target-slide-card" onclick="openTargetModal(6)">
+        <div class="target-slide-logo"><img src="assets/logos/the_city_bank_official_square.png" alt="The City Bank"></div>
+        <div class="target-slide-name">The City Bank PLC</div>
+        <div class="target-slide-tag">PRIVATE BANKING</div>
+      </div>
+
+      <!-- #07 Bank Asia -->
+      <div class="target-slide-card" onclick="openTargetModal(7)">
+        <div class="target-slide-logo"><img src="assets/logos/bank_asia_official_square.png" alt="Bank Asia"></div>
+        <div class="target-slide-name">Bank Asia</div>
+        <div class="target-slide-tag">COMMERCIAL BANK</div>
+      </div>
+
+      <!-- #08 BD Group -->
+      <div class="target-slide-card" onclick="openTargetModal(8)">
+        <div class="target-slide-logo"><img src="assets/logos/bd_group_official_square.png" alt="BD Group"></div>
+        <div class="target-slide-name">BD Group (Conglomerate)</div>
+        <div class="target-slide-tag">ENTERPRISE TRADE</div>
+      </div>
+
+      <!-- #09 RabbitBD -->
+      <div class="target-slide-card" onclick="openTargetModal(9)">
+        <div class="target-slide-logo"><img src="assets/logos/rabbit_bd_official_square.png" alt="RabbitBD"></div>
+        <div class="target-slide-name">RabbitBD</div>
+        <div class="target-slide-tag">E-COMMERCE PORTAL</div>
+      </div>
+
+      <!-- #10 Shwapno -->
+      <div class="target-slide-card" onclick="openTargetModal(10)">
+        <div class="target-slide-logo"><img src="assets/logos/shwapno_official_square.png" alt="Shwapno"></div>
+        <div class="target-slide-name">Shwapno Superstore (ACI)</div>
+        <div class="target-slide-tag">NATIONAL RETAIL (410 GB)</div>
+      </div>
+
+      <!-- #11 NovoAir -->
+      <div class="target-slide-card" onclick="openTargetModal(11)">
+        <div class="target-slide-logo"><img src="assets/logos/novoair_official_square.png" alt="NovoAir"></div>
+        <div class="target-slide-name">NovoAir</div>
+        <div class="target-slide-tag">DOMESTIC AVIATION</div>
+      </div>
+
+      <!-- #12 IBN SINA Trust -->
+      <div class="target-slide-card" onclick="openTargetModal(12)">
+        <div class="target-slide-logo"><img src="assets/logos/ibn_sina_official_square.png" alt="IBN SINA"></div>
+        <div class="target-slide-name">IBN SINA Trust</div>
+        <div class="target-slide-tag">HEALTHCARE & DIAGNOSTIC</div>
+      </div>
+
+      <!-- #13 tdotnet -->
+      <div class="target-slide-card" onclick="openTargetModal(13)">
+        <div class="target-slide-logo"><img src="assets/logos/tdotnet_official_square.png" alt="tdotnet"></div>
+        <div class="target-slide-name">tdotnet</div>
+        <div class="target-slide-tag">ISP & BGP GATEWAY</div>
+      </div>
+
+      <!-- #14 Malindoair -->
+      <div class="target-slide-card" onclick="openTargetModal(14)">
+        <div class="target-slide-logo"><img src="assets/logos/malindo_official_square.png" alt="Malindoair"></div>
+        <div class="target-slide-name">Malindo Air</div>
+        <div class="target-slide-tag">REGIONAL AVIATION</div>
+      </div>
+
+      <!-- #15 BBGC -->
+      <div class="target-slide-card" onclick="openTargetModal(15)">
+        <div class="target-slide-logo"><img src="assets/logos/bbgc_official_square.png" alt="BBGC"></div>
+        <div class="target-slide-name">BBGC (Govt College)</div>
+        <div class="target-slide-tag">PUBLIC ACADEMIA</div>
+      </div>
+
+      <!-- #16 ECS / NID Wing -->
+      <div class="target-slide-card" onclick="openTargetModal(16)">
+        <div class="target-slide-logo"><img src="assets/logos/BD-NID.png" alt="NID Wing"></div>
+        <div class="target-slide-name">ECS / NID Wing</div>
+        <div class="target-slide-tag">KPI-20 • 120M CITIZENS</div>
+      </div>
+
+      <!-- #17 Armed Forces Division -->
+      <div class="target-slide-card" onclick="openTargetModal(17)">
+        <div class="target-slide-logo"><img src="assets/logos/Bangladesh_Armed_Forces.png" alt="Armed Forces"></div>
+        <div class="target-slide-name">Armed Forces Division (AFD)</div>
+        <div class="target-slide-tag">KPI-42 • DEFENSE HQ</div>
+      </div>
+
+      <!-- #18 Confidence Group -->
+      <div class="target-slide-card" onclick="openTargetModal(18)">
+        <div class="target-slide-logo"><img src="assets/logos/confidence_official_square.png" alt="Confidence Group"></div>
+        <div class="target-slide-name">Confidence Group</div>
+        <div class="target-slide-tag">POWER GENERATION</div>
+      </div>
+
+      <!-- #19 Flora Limited -->
+      <div class="target-slide-card" onclick="openTargetModal(19)">
+        <div class="target-slide-logo"><img src="assets/logos/flora_limited_official_square.png" alt="Flora Limited"></div>
+        <div class="target-slide-name">Flora IT / Flora Limited</div>
+        <div class="target-slide-tag">GOVT IT SUPPLY CHAIN</div>
+      </div>
+
+      <!-- #20 Classified Infrastructure -->
+      <div class="target-slide-card" onclick="openTargetModal(20)">
+        <div class="target-slide-logo"><img src="assets/logos/classified_broker_square.png" alt="Classified Infrastructure"></div>
+        <div class="target-slide-name">Classified Infrastructure</div>
+        <div class="target-slide-tag">ACCESS BROKER AUCTION</div>
+      </div>
+
     </section>
 
-    <!-- Target Cards Grid -->
-    <section class="targets-grid" id="targetsGrid">
-      <!-- Injected dynamically via presentation.js -->
-    </section>
+    <!-- Bottom Slide Controls -->
+    <footer class="slide-navbar">
+      <div class="slide-indicator-text">
+        <span>Team NullX CTI</span> • <span style="color: var(--accent-cyan);">20 Verified Breach Targets</span>
+      </div>
+
+      <div class="slide-dots">
+        <a href="presentation.html" class="slide-dot active" title="Slide 1"></a>
+        <a href="categories.html" class="slide-dot" title="Slide 2"></a>
+        <a href="vectors.html" class="slide-dot" title="Slide 3"></a>
+      </div>
+
+      <div style="display: flex; gap: 0.5rem; align-items: center;">
+        <span style="font-size: 0.72rem; color: var(--text-dim); margin-right: 0.5rem;">[Use ← / → Arrow Keys]</span>
+        <button class="slide-nav-btn" disabled style="opacity: 0.4; cursor: not-allowed;">◀ Prev</button>
+        <a href="categories.html" class="slide-nav-btn">Next: Data Types ▶</a>
+      </div>
+    </footer>
 
   </main>
 
@@ -81,39 +210,9 @@
   <div class="modal-backdrop" id="targetDetailModal">
     <div class="modal-card">
       <button class="modal-close-btn" id="modalCloseBtn">&times;</button>
-      <div id="modalContent">
-        <!-- Rendered dynamically -->
-      </div>
+      <div id="modalContent"></div>
     </div>
   </div>
-
-  <!-- Footer -->
-  <footer class="app-footer">
-    <div class="container footer-content">
-      <div>
-        <strong style="color: var(--text-main); font-size: 0.9rem;">Project Dark Hunt</strong>
-        <p>A non-speculative empirical Cyber Threat Intelligence inquiry by Team NullX.</p>
-        <div class="team-members">
-          <div class="team-member-item">
-            <span class="team-member-role">Project Lead & Planning</span>
-            <span class="team-member-name">Rahat Sahriar Rafi</span>
-          </div>
-          <div class="team-member-item">
-            <span class="team-member-role">Website Development & Evidence</span>
-            <span class="team-member-name">Md. Tanjim Islam</span>
-          </div>
-          <div class="team-member-item">
-            <span class="team-member-role">Evidence Verification</span>
-            <span class="team-member-name">MD Rakib Hasan Apon</span>
-          </div>
-        </div>
-      </div>
-      <div style="text-align: right;">
-        <span class="badge badge-critical" style="margin-bottom: 0.5rem;">RESTRICTED CTI ARCHIVE</span>
-        <p>Classification: Lawful Passive OSINT // Redacted Citizen PII</p>
-      </div>
-    </div>
-  </footer>
 
   <script src="presentation.js"></script>
 </body>
