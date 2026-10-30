@@ -171,7 +171,7 @@
     "kpi": "Non-KPI",
     "sector": "Private Commercial Banking",
     "threat": "HIGH",
-    "logo": "assets/logos/custom/bank_asia.png",
+    "logo": "assets/logos/bank_asia_official_square.png",
     "abbr": "BA",
     "color": "#4338ca",
     "evidence": [
@@ -199,7 +199,7 @@
     "kpi": "Non-KPI",
     "sector": "Industrial Manufacturing & Commerce",
     "threat": "HIGH",
-    "logo": "assets/logos/custom/bd_group.png",
+    "logo": "assets/logos/bd_group_official_square.png",
     "abbr": "BDG",
     "color": "#4d7c0f",
     "evidence": [
@@ -225,7 +225,7 @@
     "kpi": "Non-KPI",
     "sector": "E-Commerce & Digital Retail",
     "threat": "HIGH",
-    "logo": "assets/logos/custom/rabbit_bd.png",
+    "logo": "assets/logos/rabbit_bd_official_square.png",
     "abbr": "RBD",
     "color": "#c2410c",
     "evidence": [
@@ -251,7 +251,7 @@
     "kpi": "Non-KPI",
     "sector": "National Retail Chain (410 GB Dump)",
     "threat": "HIGH",
-    "logo": "assets/logos/custom/shwapno.png",
+    "logo": "assets/logos/shwapno_official_square.png",
     "abbr": "SWP",
     "color": "#dc2626",
     "evidence": [
@@ -278,7 +278,7 @@
     "kpi": "Non-KPI",
     "sector": "Domestic Commercial Aviation",
     "threat": "LOW",
-    "logo": "assets/logos/custom/novoair.png",
+    "logo": "assets/logos/novoair_official_square.png",
     "abbr": "VQ",
     "color": "#0891b2",
     "evidence": [
@@ -306,7 +306,7 @@
     "kpi": "Non-KPI",
     "sector": "Healthcare & Diagnostic Services",
     "threat": "LOW",
-    "logo": "assets/logos/custom/ibn_sina.png",
+    "logo": "assets/logos/ibn_sina_official_square.png",
     "abbr": "IBN",
     "color": "#059669",
     "evidence": [
@@ -359,7 +359,7 @@
     "kpi": "Non-KPI",
     "sector": "Regional Commercial Aviation",
     "threat": "LOW",
-    "logo": "assets/logos/custom/malindo_air.png",
+    "logo": "assets/logos/malindo_official_square.png",
     "abbr": "OD",
     "color": "#d97706",
     "evidence": [
@@ -386,7 +386,7 @@
     "kpi": "Non-KPI",
     "sector": "Public Education & Academia",
     "threat": "LOW",
-    "logo": "assets/logos/custom/bbgc.png",
+    "logo": "assets/logos/bbgc_official_square.png",
     "abbr": "BBG",
     "color": "#4f46e5",
     "evidence": [
@@ -474,7 +474,7 @@
     "kpi": "Non-KPI",
     "sector": "Power Generation Infrastructure",
     "threat": "HIGH",
-    "logo": "assets/logos/custom/confidence_group.png",
+    "logo": "assets/logos/confidence_official_square.png",
     "abbr": "CFG",
     "color": "#ca8a04",
     "evidence": [
