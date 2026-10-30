@@ -205,7 +205,7 @@ button { font: inherit; }
 /* Slide Header & Stamps */
 .slide-header {
   text-align: center;
-  margin-bottom: 0.25rem;
+  margin-bottom: 0.15rem;
   position: relative;
   flex-shrink: 0;
 }
@@ -216,29 +216,29 @@ button { font: inherit; }
   border-radius: 999px;
   background: var(--forest);
   color: var(--on-forest);
-  padding: 0.12rem 0.65rem;
-  font-size: 0.7rem;
+  padding: 0.1rem 0.6rem;
+  font-size: 0.68rem;
   font-weight: 700;
   font-family: ui-monospace, monospace;
   letter-spacing: 0.05em;
-  margin-bottom: 0.1rem;
+  margin-bottom: 0.08rem;
 }
 
 .slide-header h2 {
-  font-size: clamp(1.1rem, 2vh, 1.4rem);
+  font-size: clamp(1.05rem, 1.8vh, 1.3rem);
   font-weight: 800;
   color: var(--ink);
-  margin: 0.1rem 0;
+  margin: 0.05rem 0;
   letter-spacing: -0.02em;
-  line-height: 1.2;
+  line-height: 1.15;
 }
 
 .slide-header p {
-  font-size: clamp(0.7rem, 1.1vh, 0.78rem);
+  font-size: clamp(0.68rem, 1vh, 0.76rem);
   color: var(--quiet);
   margin: 0 auto;
   max-width: 80ch;
-  line-height: 1.25;
+  line-height: 1.2;
 }
 
 /* Page 1: 5x4 Target Logos Slide Grid — strictly fits 1 slide */
@@ -246,17 +246,17 @@ button { font: inherit; }
   display: grid;
   grid-template-columns: repeat(5, 1fr);
   grid-template-rows: repeat(4, 1fr);
-  gap: clamp(0.3rem, 0.8vh, 0.55rem);
+  gap: clamp(0.35rem, 0.85vh, 0.6rem);
   flex: 1;
   min-height: 0;
-  margin: 0.2rem 0;
+  margin: 0.15rem 0;
 }
 
 .target-slide-card {
   background: var(--sheet);
   border: 1px solid var(--rule);
-  border-radius: 8px;
-  padding: clamp(0.2rem, 0.6vh, 0.4rem) 0.35rem;
+  border-radius: 10px;
+  padding: clamp(0.25rem, 0.7vh, 0.45rem) 0.4rem;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -271,32 +271,35 @@ button { font: inherit; }
 .target-slide-card:hover {
   transform: translateY(-2px);
   border-color: var(--forest);
-  box-shadow: 0 4px 12px color-mix(in srgb, var(--forest) 20%, transparent);
+  box-shadow: 0 4px 14px color-mix(in srgb, var(--forest) 25%, transparent);
 }
 
 .target-slide-logo {
-  width: clamp(30px, 5vh, 44px);
-  height: clamp(30px, 5vh, 44px);
+  width: clamp(52px, 8.2vh, 76px);
+  height: clamp(52px, 8.2vh, 76px);
   background: #ffffff;
-  border: 1px solid var(--rule);
-  border-radius: 6px;
+  border: 1.5px solid var(--rule);
+  border-radius: 10px;
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 2px;
-  margin-bottom: clamp(1px, 0.3vh, 3px);
+  padding: clamp(3px, 0.6vh, 6px);
+  margin-bottom: clamp(2px, 0.4vh, 5px);
   flex-shrink: 0;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.12);
 }
 
 .target-slide-logo img {
+  width: 100%;
+  height: 100%;
   max-width: 100%;
   max-height: 100%;
   object-fit: contain;
 }
 
 .target-slide-name {
-  font-size: clamp(0.68rem, 1.05vh, 0.78rem);
-  font-weight: 700;
+  font-size: clamp(0.72rem, 1.15vh, 0.84rem);
+  font-weight: 800;
   color: var(--ink);
   line-height: 1.15;
   margin-bottom: 2px;
@@ -307,10 +310,10 @@ button { font: inherit; }
 }
 
 .target-slide-tag {
-  font-size: clamp(0.56rem, 0.85vh, 0.64rem);
+  font-size: clamp(0.58rem, 0.9vh, 0.66rem);
   font-family: ui-monospace, monospace;
-  color: var(--quiet);
-  font-weight: 600;
+  color: var(--forest);
+  font-weight: 700;
   line-height: 1;
   white-space: nowrap;
   overflow: hidden;
