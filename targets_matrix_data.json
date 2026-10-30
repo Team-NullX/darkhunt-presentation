@@ -5,7 +5,7 @@
     "kpi": "KPI-10",
     "sector": "Aviation & Transport",
     "threat": "CRITICAL",
-    "logo": "biman-bangladesh.png",
+    "logo": "assets/logos/biman-bangladesh.png",
     "abbr": "BG",
     "color": "#047857",
     "evidence": [
@@ -32,7 +32,7 @@
     "kpi": "KPI-06",
     "sector": "State Commercial Banking",
     "threat": "CRITICAL",
-    "logo": "Agrani_Bank_Limited_PNG.jpeg",
+    "logo": "assets/logos/Agrani_Bank_Limited_PNG.jpeg",
     "abbr": "AGR",
     "color": "#0284c7",
     "evidence": [
@@ -59,7 +59,7 @@
     "kpi": "KPI-41",
     "sector": "Law Enforcement",
     "threat": "CRITICAL",
-    "logo": "Presidential_Emblem_of_Bangladesh.png",
+    "logo": "assets/logos/Presidential_Emblem_of_Bangladesh.png",
     "abbr": "BP",
     "color": "#1e3a8a",
     "evidence": [
@@ -87,7 +87,7 @@
     "kpi": "KPI-43",
     "sector": "National Defense",
     "threat": "CRITICAL",
-    "logo": "Bangladesh_Navy.png",
+    "logo": "assets/logos/Bangladesh_Navy.png",
     "abbr": "BN",
     "color": "#0369a1",
     "evidence": [
@@ -116,7 +116,7 @@
     "kpi": "Non-KPI",
     "sector": "Financial Insurance & Investments",
     "threat": "CRITICAL",
-    "logo": null,
+    "logo": "assets/logos/custom/popular_life.png",
     "abbr": "PLI",
     "color": "#b45309",
     "evidence": [
@@ -144,7 +144,7 @@
     "kpi": "Non-KPI",
     "sector": "Private Commercial Banking",
     "threat": "HIGH",
-    "logo": null,
+    "logo": "assets/logos/custom/city_bank.png",
     "abbr": "CBL",
     "color": "#b91c1c",
     "evidence": [
@@ -171,7 +171,7 @@
     "kpi": "Non-KPI",
     "sector": "Private Commercial Banking",
     "threat": "HIGH",
-    "logo": null,
+    "logo": "assets/logos/custom/bank_asia.png",
     "abbr": "BA",
     "color": "#4338ca",
     "evidence": [
@@ -199,7 +199,7 @@
     "kpi": "Non-KPI",
     "sector": "Industrial Manufacturing & Commerce",
     "threat": "HIGH",
-    "logo": null,
+    "logo": "assets/logos/custom/bd_group.png",
     "abbr": "BDG",
     "color": "#4d7c0f",
     "evidence": [
@@ -225,7 +225,7 @@
     "kpi": "Non-KPI",
     "sector": "E-Commerce & Digital Retail",
     "threat": "HIGH",
-    "logo": null,
+    "logo": "assets/logos/custom/rabbit_bd.png",
     "abbr": "RBD",
     "color": "#c2410c",
     "evidence": [
@@ -251,7 +251,7 @@
     "kpi": "Non-KPI",
     "sector": "National Retail Chain (410 GB Dump)",
     "threat": "HIGH",
-    "logo": null,
+    "logo": "assets/logos/custom/shwapno.png",
     "abbr": "SWP",
     "color": "#dc2626",
     "evidence": [
@@ -278,7 +278,7 @@
     "kpi": "Non-KPI",
     "sector": "Domestic Commercial Aviation",
     "threat": "LOW",
-    "logo": "civil-aviation.png",
+    "logo": "assets/logos/custom/novoair.png",
     "abbr": "VQ",
     "color": "#0891b2",
     "evidence": [
@@ -306,7 +306,7 @@
     "kpi": "Non-KPI",
     "sector": "Healthcare & Diagnostic Services",
     "threat": "LOW",
-    "logo": "Directorate_General_of_Health_Services__DGHS_.png",
+    "logo": "assets/logos/custom/ibn_sina.png",
     "abbr": "IBN",
     "color": "#059669",
     "evidence": [
@@ -332,7 +332,7 @@
     "kpi": "Non-KPI",
     "sector": "ISP & Telecommunications Gateway",
     "threat": "LOW",
-    "logo": "bangladesh-telecommunications-company-limited-logo-png_seeklogo-492053.png",
+    "logo": "assets/logos/custom/tdotnet.png",
     "abbr": "TDN",
     "color": "#2563eb",
     "evidence": [
@@ -359,7 +359,7 @@
     "kpi": "Non-KPI",
     "sector": "Regional Commercial Aviation",
     "threat": "LOW",
-    "logo": "civil-aviation.png",
+    "logo": "assets/logos/custom/malindo_air.png",
     "abbr": "OD",
     "color": "#d97706",
     "evidence": [
@@ -386,7 +386,7 @@
     "kpi": "Non-KPI",
     "sector": "Public Education & Academia",
     "threat": "LOW",
-    "logo": "Presidential_Emblem_of_Bangladesh.png",
+    "logo": "assets/logos/custom/bbgc.png",
     "abbr": "BBG",
     "color": "#4f46e5",
     "evidence": [
@@ -412,7 +412,7 @@
     "kpi": "KPI-20",
     "sector": "Civil Identity Registry",
     "threat": "CRITICAL",
-    "logo": "BD-NID.png",
+    "logo": "assets/logos/BD-NID.png",
     "abbr": "NID",
     "color": "#dc2626",
     "evidence": [
@@ -446,7 +446,7 @@
     "kpi": "KPI-42",
     "sector": "Tri-Services Headquarters",
     "threat": "CRITICAL",
-    "logo": "Bangladesh_Armed_Forces.png",
+    "logo": "assets/logos/Bangladesh_Armed_Forces.png",
     "abbr": "AFD",
     "color": "#15803d",
     "evidence": [
@@ -474,7 +474,7 @@
     "kpi": "Non-KPI",
     "sector": "Power Generation Infrastructure",
     "threat": "HIGH",
-    "logo": "bangladesh-bidyut-unnayan-board-logo-png_seeklogo-334650.png",
+    "logo": "assets/logos/custom/confidence_group.png",
     "abbr": "CFG",
     "color": "#ca8a04",
     "evidence": [
@@ -500,7 +500,7 @@
     "kpi": "Non-KPI",
     "sector": "Strategic Government IT Vendor (Supply Chain)",
     "threat": "HIGH",
-    "logo": "Bangladesh_Computer_Council.png",
+    "logo": "assets/logos/custom/flora_limited.png",
     "abbr": "FLR",
     "color": "#0284c7",
     "evidence": [
@@ -529,7 +529,7 @@
     "kpi": "Access Broker",
     "sector": "Network Access Broker Auction",
     "threat": "LOW",
-    "logo": "ntmc-logo-png_seeklogo-556021.png",
+    "logo": "assets/logos/custom/classified_broker.png",
     "abbr": "SEC",
     "color": "#64748b",
     "evidence": [

@@ -112,8 +112,9 @@ document.addEventListener('DOMContentLoaded', async () => {
     targetsGrid.innerHTML = items.map(t => {
       const threatClass = t.threat.toLowerCase() === 'critical' ? 'badge-critical' : (t.threat.toLowerCase() === 'high' ? 'badge-high' : 'badge-low');
       
+      const logoSrc = t.logo.startsWith('assets/') ? t.logo : `assets/logos/${t.logo}`;
       const logoHtml = t.logo 
-        ? `<img src="assets/logos/${t.logo}" alt="${t.name} Logo" class="target-logo-img" loading="lazy">`
+        ? `<img src="${logoSrc}" alt="${t.name} Logo" class="target-logo-img" loading="lazy">`
         : `<div class="target-logo-fallback" style="background: linear-gradient(135deg, ${t.color}, #090d16);">${t.abbr}</div>`;
 
       const evdChips = t.evidence.map(e => `<span class="evd-chip">${e}</span>`).join('');
@@ -183,8 +184,9 @@ document.addEventListener('DOMContentLoaded', async () => {
     if (!modal || !modalContent) return;
     const threatClass = t.threat.toLowerCase() === 'critical' ? 'badge-critical' : (t.threat.toLowerCase() === 'high' ? 'badge-high' : 'badge-low');
 
+    const logoSrc = t.logo.startsWith('assets/') ? t.logo : `assets/logos/${t.logo}`;
     const logoHtml = t.logo 
-      ? `<img src="assets/logos/${t.logo}" alt="${t.name}" style="max-height: 48px; max-width: 48px; object-fit: contain;">`
+      ? `<img src="${logoSrc}" alt="${t.name}" style="max-height: 48px; max-width: 48px; object-fit: contain;">`
       : `<div style="width: 48px; height: 48px; border-radius: 8px; background: ${t.color}; display: flex; align-items: center; justify-content: center; font-weight: 800; color: #fff;">${t.abbr}</div>`;
 
     modalContent.innerHTML = `
@@ -240,8 +242,9 @@ document.addEventListener('DOMContentLoaded', async () => {
     matrixTableBody.innerHTML = targets.map(t => {
       const threatClass = t.threat.toLowerCase() === 'critical' ? 'badge-critical' : (t.threat.toLowerCase() === 'high' ? 'badge-high' : 'badge-low');
       
+      const logoSrc = t.logo.startsWith('assets/') ? t.logo : `assets/logos/${t.logo}`;
       const logoThumb = t.logo 
-        ? `<div class="table-logo-thumb"><img src="assets/logos/${t.logo}" alt="${t.name}"></div>`
+        ? `<div class="table-logo-thumb"><img src="${logoSrc}" alt="${t.name}"></div>`
         : `<div class="table-logo-thumb" style="background: ${t.color}; color: #fff; font-weight: 800; font-size: 0.75rem;">${t.abbr}</div>`;
 
       return `
