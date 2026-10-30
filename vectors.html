@@ -53,95 +53,212 @@
     </header>
 
     <!-- 6 Attack Vectors 3x2 Presentation Grid -->
+        <!-- 6 Attack Vectors 3x2 Presentation Grid -->
+        <!-- 6 Attack Vectors 3x2 Presentation Grid -->
+        <!-- 6 Attack Vectors 3x2 Presentation Grid -->
     <section class="vectors-slide-grid">
 
       <!-- Vector 1: Sovereign Wire Fraud -->
       <div class="vector-slide-box">
-        <div>
+        <div style="min-width: 0;">
           <h3>🏛️ 1. Sovereign Wire Fraud & Forgery</h3>
-          <div class="vector-slide-actors">TARGETS: Armed Forces Division, Navy, Police CID</div>
-          <div class="vector-slide-how">
-            <strong>Adversary Misuse Playbook:</strong>
-            <p>Attackers extract authentic military seals, officer signatures, and official dispatch numbers to forge equipment purchase orders and redirect state treasury wires to offshore accounts.</p>
+          <div class="vector-slide-actors">TARGETS: Armed Forces Division (#17), Navy (#04), Police CID (#03)</div>
+          
+          <div class="vector-tags-row">
+            <span class="vector-ttp-badge">MITRE T1566.001 Spearphishing</span>
+            <span class="vector-ttp-badge">T1589 Identity Harvesting</span>
+            <span class="vector-ttp-badge">T1078 Valid Credentials</span>
+          </div>
+
+          <div class="vector-killchain">
+            <div class="vector-killchain-title">⚡ 3-Stage Exploitation Kill-Chain</div>
+            <div class="kc-step">
+              <span class="kc-num">01</span>
+              <span><strong>Recon:</strong> Extract authentic military seals, officer signatures & dispatch numbers.</span>
+            </div>
+            <div class="kc-step">
+              <span class="kc-num">02</span>
+              <span><strong>Forge:</strong> Synthesize emergency defense equipment procurement purchase orders.</span>
+            </div>
+            <div class="kc-step">
+              <span class="kc-num">03</span>
+              <span><strong>Divert:</strong> Transmit fraudulent wire instructions to redirect state funds offshore.</span>
+            </div>
           </div>
         </div>
+
         <div class="vector-slide-fix">
-          🛡️ <strong>Fix:</strong> Cryptographic PKI digital signing & multi-party out-of-band wire verification.
+          🛡️ <strong>Zero-Trust Fix:</strong> PKI digital signing (x.509) & multi-party out-of-band wire verification.
         </div>
       </div>
 
       <!-- Vector 2: Infrastructure Sabotage -->
       <div class="vector-slide-box">
-        <div>
+        <div style="min-width: 0;">
           <h3>⚡ 2. Infrastructure & SCADA Blackout</h3>
-          <div class="vector-slide-actors">TARGETS: Flora Limited (Govt IT), tdotnet (BGP), Confidence</div>
-          <div class="vector-slide-how">
-            <strong>Adversary Misuse Playbook:</strong>
-            <p>Adversaries compromise Flora IT developer credentials to poison ministry software updates, and hijack tdotnet BGP gateway routing to knock out power grid monitoring and banking.</p>
+          <div class="vector-slide-actors">TARGETS: Flora Limited (#19), tdotnet BGP (#13), Confidence Group (#18)</div>
+
+          <div class="vector-tags-row">
+            <span class="vector-ttp-badge">MITRE T1195 Supply Chain</span>
+            <span class="vector-ttp-badge">T0814 Denial of Control</span>
+            <span class="vector-ttp-badge">T1584 BGP Hijacking</span>
+          </div>
+
+          <div class="vector-killchain">
+            <div class="vector-killchain-title">⚡ 3-Stage Exploitation Kill-Chain</div>
+            <div class="kc-step">
+              <span class="kc-num">01</span>
+              <span><strong>Vendor Pivot:</strong> Extract hardcoded API tokens & VPN keys from Flora IT source code.</span>
+            </div>
+            <div class="kc-step">
+              <span class="kc-num">02</span>
+              <span><strong>BGP Poisoning:</strong> Hijack tdotnet autonomous system routes to blind grid monitoring.</span>
+            </div>
+            <div class="kc-step">
+              <span class="kc-num">03</span>
+              <span><strong>SCADA Trip:</strong> Exploit Confidence plant schematics to remotely shut down power turbines.</span>
+            </div>
           </div>
         </div>
+
         <div class="vector-slide-fix">
-          🛡️ <strong>Fix:</strong> Air-gap power SCADA networks; enforce RPKI route validation on all telco gateways.
+          🛡️ <strong>Zero-Trust Fix:</strong> Air-gap power SCADA networks; enforce RPKI cryptographic route validation.
         </div>
       </div>
 
       <!-- Vector 3: Banking Spear-Phishing -->
       <div class="vector-slide-box vector-warning">
-        <div>
-          <h3>🎯 3. Corporate Banking Spear-Phishing</h3>
-          <div class="vector-slide-actors">TARGETS: The City Bank, Bank Asia, Agrani Bank PLC</div>
-          <div class="vector-slide-how">
-            <strong>Adversary Misuse Playbook:</strong>
-            <p>Ransomware cartels study leaked corporate credit audits to craft hyper-contextual spear-phishing emails to branch managers, deploying ransomware that paralyzes core banking servers.</p>
+        <div style="min-width: 0;">
+          <h3>💳 3. Corporate Banking Spear-Phishing</h3>
+          <div class="vector-slide-actors">TARGETS: The City Bank (#06), Bank Asia (#07), Agrani Bank PLC (#02)</div>
+
+          <div class="vector-tags-row">
+            <span class="vector-ttp-badge">MITRE T1566.002 Spearphishing</span>
+            <span class="vector-ttp-badge">T1486 Ransomware</span>
+            <span class="vector-ttp-badge">T1534 Lateral Phish</span>
+          </div>
+
+          <div class="vector-killchain">
+            <div class="vector-killchain-title">⚡ 3-Stage Exploitation Kill-Chain</div>
+            <div class="kc-step">
+              <span class="kc-num">01</span>
+              <span><strong>Audit Analysis:</strong> Scrape leaked corporate credit audits & default loan balance sheets.</span>
+            </div>
+            <div class="kc-step">
+              <span class="kc-num">02</span>
+              <span><strong>Executive Whaling:</strong> Target branch managers with weaponized audit memos via email.</span>
+            </div>
+            <div class="kc-step">
+              <span class="kc-num">03</span>
+              <span><strong>Double Extortion:</strong> Encrypt core banking servers and auction loan default files on Tor.</span>
+            </div>
           </div>
         </div>
+
         <div class="vector-slide-fix">
-          🛡️ <strong>Fix:</strong> FIDO2 hardware MFA for all bank managers; immutable air-gapped off-site backups.
+          🛡️ <strong>Zero-Trust Fix:</strong> Mandate hardware FIDO2 keys for bank managers; immutable air-gapped backups.
         </div>
       </div>
 
-      <!-- Vector 4: Mass Identity Theft -->
+      <!-- Vector 4: Mass SIM-Swap & Wallet Hijacking -->
       <div class="vector-slide-box">
-        <div>
+        <div style="min-width: 0;">
           <h3>📱 4. Mass SIM-Swap & Wallet Hijacking</h3>
-          <div class="vector-slide-actors">TARGETS: ECS / NID (120M), Shwapno (410 GB), RabbitBD</div>
-          <div class="vector-slide-how">
-            <strong>Adversary Misuse Playbook:</strong>
-            <p>Syndicates match 120M citizen NID details with retail customer mobile numbers, bypassing telco verification to execute SIM swaps, intercept SMS OTPs, and loot bKash/Nagad accounts.</p>
+          <div class="vector-slide-actors">TARGETS: ECS / NID Wing (#16), Shwapno (#10), RabbitBD (#09)</div>
+
+          <div class="vector-tags-row">
+            <span class="vector-ttp-badge">MITRE T1589 Identity Harvesting</span>
+            <span class="vector-ttp-badge">T1404 Exploit SMS 2FA</span>
+            <span class="vector-ttp-badge">T1098 Account Takeover</span>
+          </div>
+
+          <div class="vector-killchain">
+            <div class="vector-killchain-title">⚡ 3-Stage Exploitation Kill-Chain</div>
+            <div class="kc-step">
+              <span class="kc-num">01</span>
+              <span><strong>Cross-Match:</strong> Join 120M citizen NID records with retail customer phone lists.</span>
+            </div>
+            <div class="kc-step">
+              <span class="kc-num">02</span>
+              <span><strong>Kiosk Impersonation:</strong> Use forged laminated NID cards at telco shops to clone SIMs.</span>
+            </div>
+            <div class="kc-step">
+              <span class="kc-num">03</span>
+              <span><strong>Wallet Drain:</strong> Intercept 2FA SMS OTPs to liquidate citizen bKash, Nagad & bank funds.</span>
+            </div>
           </div>
         </div>
+
         <div class="vector-slide-fix">
-          🛡️ <strong>Fix:</strong> Eliminate SMS OTP for PIN resets; mandate biometric liveness scan for duplicate SIMs.
+          🛡️ <strong>Zero-Trust Fix:</strong> Eliminate SMS OTP for PIN resets; mandate live biometric facial scan for SIMs.
         </div>
       </div>
 
-      <!-- Vector 5: Diplomatic & VIP Surveillance -->
+      <!-- Vector 5: VIP Surveillance & Border Evasion -->
       <div class="vector-slide-box vector-warning">
-        <div>
+        <div style="min-width: 0;">
           <h3>✈️ 5. VIP Surveillance & Border Evasion</h3>
-          <div class="vector-slide-actors">TARGETS: Biman Bangladesh, NovoAir, Malindo Air</div>
-          <div class="vector-slide-how">
-            <strong>Adversary Misuse Playbook:</strong>
-            <p>Foreign intelligence agencies track flight itineraries, passport numbers, and seat assignments of defense officials and diplomats abroad, while criminals clone booking records to evade watchlists.</p>
+          <div class="vector-slide-actors">TARGETS: Biman Bangladesh (#01), NovoAir (#11), Malindo Air (#14)</div>
+
+          <div class="vector-tags-row">
+            <span class="vector-ttp-badge">MITRE T1056 Input Capture</span>
+            <span class="vector-ttp-badge">T1539 Steal Web Session</span>
+            <span class="vector-ttp-badge">T1585 Establish Accounts</span>
+          </div>
+
+          <div class="vector-killchain">
+            <div class="vector-killchain-title">⚡ 3-Stage Exploitation Kill-Chain</div>
+            <div class="kc-step">
+              <span class="kc-num">01</span>
+              <span><strong>Manifest Ingestion:</strong> Parse leaked passenger passport scans, PNRs & crew rosters.</span>
+            </div>
+            <div class="kc-step">
+              <span class="kc-num">02</span>
+              <span><strong>VIP Surveillance:</strong> Track international transit schedules & layovers of defense VIPs.</span>
+            </div>
+            <div class="kc-step">
+              <span class="kc-num">03</span>
+              <span><strong>Border Evasion:</strong> Clone booking reference codes to bypass airport departure watchlists.</span>
+            </div>
           </div>
         </div>
+
         <div class="vector-slide-fix">
-          🛡️ <strong>Fix:</strong> End-to-end tokenization of airline PNR data; segregated VIP travel channels.
+          🛡️ <strong>Zero-Trust Fix:</strong> Full tokenization of airline PNR databases; isolated diplomatic VIP booking portal.
         </div>
       </div>
 
       <!-- Vector 6: Tor Double Extortion Cartels -->
       <div class="vector-slide-box">
-        <div>
-          <h3>💀 6. Darknet Double Extortion Pipeline</h3>
+        <div style="min-width: 0;">
+          <h3>🌐 6. Darknet Double Extortion Pipeline</h3>
           <div class="vector-slide-actors">TARGETS: All 20 Targets Across 16 Tor Hidden Services</div>
-          <div class="vector-slide-how">
-            <strong>Adversary Misuse Playbook:</strong>
-            <p>Initial access brokers sell network credentials; ransomware gangs exfiltrate databases and publish countdown auctions on Tor leak blogs, creating permanent darknet exposure.</p>
+
+          <div class="vector-tags-row">
+            <span class="vector-ttp-badge">MITRE T1486 Ransomware</span>
+            <span class="vector-ttp-badge">T1491 Web Defacement</span>
+            <span class="vector-ttp-badge">T1567 Exfil Over Web</span>
+          </div>
+
+          <div class="vector-killchain">
+            <div class="vector-killchain-title">⚡ 3-Stage Exploitation Kill-Chain</div>
+            <div class="kc-step">
+              <span class="kc-num">01</span>
+              <span><strong>Initial Foothold:</strong> Access brokers compromise unpatched edge VPNs and auction logins.</span>
+            </div>
+            <div class="kc-step">
+              <span class="kc-num">02</span>
+              <span><strong>Stealth Exfiltration:</strong> Ransomware cartels stealthily steal terabytes of database archives.</span>
+            </div>
+            <div class="kc-step">
+              <span class="kc-num">03</span>
+              <span><strong>Tor Auction:</strong> Publish victim branding, proof snippets & ticking countdown ransoms on Tor.</span>
+            </div>
           </div>
         </div>
+
         <div class="vector-slide-fix">
-          🛡️ <strong>Fix:</strong> Proactive automated darknet CTI scraping; mandatory 72-hour breach disclosure laws.
+          🛡️ <strong>Zero-Trust Fix:</strong> Automated darknet CTI scraping; rapid edge perimeter vulnerability patching.
         </div>
       </div>
 
